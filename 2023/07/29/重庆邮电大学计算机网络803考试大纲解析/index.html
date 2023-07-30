@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"cquptky803.cn","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="重邮多年未变的考试大纲在今年竟然有变化了，参考书籍从第6版的谢希仁《计算机网络》变成了第8版的《计算机网络》，同时也增加了第八版课本新增的内容，比如SDN。 大纲只是列出了在备考的过程中应该要掌握的内容，我们要学习的远比大纲的内容要多，要详细，我会在思维导图的基础上将2023年的考试大纲给补充完整。">
+  <meta name="description" content="重邮多年未变的考试大纲在今年竟然有变化了，参考书籍从第6版的谢希仁《计算机网络》变成了第8版的《计算机网络》，同时也增加了很多内容，特别是第八版课本新增的内容，如SDN。 大纲只是列出了在备考的过程中应该要掌握的内容，我们要学习的远比大纲的内容要多，要详细，我会在思维导图的基础上将2023年的考试大纲简要的补充完整。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="重庆邮电大学计算机网络803考试大纲解析">
 <meta property="og:url" content="https://cquptky803.cn/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/index.html">
 <meta property="og:site_name" content="重庆邮电大学计算机网络803学习分享">
-<meta property="og:description" content="重邮多年未变的考试大纲在今年竟然有变化了，参考书籍从第6版的谢希仁《计算机网络》变成了第8版的《计算机网络》，同时也增加了第八版课本新增的内容，比如SDN。 大纲只是列出了在备考的过程中应该要掌握的内容，我们要学习的远比大纲的内容要多，要详细，我会在思维导图的基础上将2023年的考试大纲给补充完整。">
+<meta property="og:description" content="重邮多年未变的考试大纲在今年竟然有变化了，参考书籍从第6版的谢希仁《计算机网络》变成了第8版的《计算机网络》，同时也增加了很多内容，特别是第八版课本新增的内容，如SDN。 大纲只是列出了在备考的过程中应该要掌握的内容，我们要学习的远比大纲的内容要多，要详细，我会在思维导图的基础上将2023年的考试大纲简要的补充完整。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cquptky803.cn/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%BB%84%E6%88%90.jpg">
 <meta property="og:image" content="https://cquptky803.cn/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8A%9F%E8%83%BD.jpg">
@@ -45,8 +45,16 @@
 <meta property="og:image" content="https://cquptky803.cn/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/%E4%BB%A5%E5%A4%AA%E7%BD%91%E6%A0%87%E5%87%86.jpg">
 <meta property="og:image" content="https://cquptky803.cn/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/MAC%E5%B8%A7%E6%A0%BC%E5%BC%8F.jpg">
 <meta property="og:image" content="https://cquptky803.cn/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/%E5%B9%BF%E5%9F%9F%E7%BD%91%E7%89%B9%E7%82%B9.jpg">
+<meta property="og:image" content="https://cquptky803.cn/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/ALOHA%E5%8D%8F%E8%AE%AE.jpg">
+<meta property="og:image" content="https://cquptky803.cn/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/CSMACD%E5%8D%8F%E8%AE%AE.jpg">
+<meta property="og:image" content="https://cquptky803.cn/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/%E5%88%92%E5%88%86VLAN.jpg">
+<meta property="og:image" content="https://cquptky803.cn/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/IP%E6%A0%BC%E5%BC%8F.jpg">
+<meta property="og:image" content="https://cquptky803.cn/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/IP%E6%A0%BC%E5%BC%8F2.jpg">
+<meta property="og:image" content="https://cquptky803.cn/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/ICMP%E7%A7%8D%E7%B1%BB.jpg">
+<meta property="og:image" content="https://cquptky803.cn/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/OSPF.jpg">
+<meta property="og:image" content="https://cquptky803.cn/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/IP%E5%A4%9A%E6%92%AD.jpg">
 <meta property="article:published_time" content="2023-07-29T15:35:26.000Z">
-<meta property="article:modified_time" content="2023-07-30T05:46:20.088Z">
+<meta property="article:modified_time" content="2023-07-30T16:59:00.740Z">
 <meta property="article:author" content="意中人">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cquptky803.cn/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%BB%84%E6%88%90.jpg">
@@ -199,10 +207,17 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-07-30 13:46:20" itemprop="dateModified" datetime="2023-07-30T13:46:20+08:00">2023-07-30</time>
+                <time title="修改时间：2023-07-31 00:59:00" itemprop="dateModified" datetime="2023-07-31T00:59:00+08:00">2023-07-31</time>
               </span>
 
           
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
 
         </div>
       </header>
@@ -213,8 +228,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>重邮多年未变的考试大纲在今年竟然有变化了，参考书籍从第6版的谢希仁《计算机网络》变成了第8版的《计算机网络》，同时也增加了第八版课本新增的内容，比如SDN。</p>
-<p>大纲只是列出了在备考的过程中应该要掌握的内容，我们要学习的远比大纲的内容要多，要详细，我会在思维导图的基础上将2023年的考试大纲给补充完整。</p>
+        <p>重邮多年未变的考试大纲在今年竟然有变化了，参考书籍从第6版的谢希仁《计算机网络》变成了第8版的《计算机网络》，同时也增加了很多内容，特别是第八版课本新增的内容，如SDN。</p>
+<p>大纲只是列出了在备考的过程中应该要掌握的内容，我们要学习的远比大纲的内容要多，要详细，我会在思维导图的基础上将2023年的考试大纲简要的补充完整。</p>
 <span id="more"></span>
 
 <h4 id="（一）概述"><a href="#（一）概述" class="headerlink" title="（一）概述"></a>（一）概述</h4><h5 id="1．计算机网络的定义"><a href="#1．计算机网络的定义" class="headerlink" title="1．计算机网络的定义"></a>1．计算机网络的定义</h5><p>计算机网络就是一些互联的、自治的计算机系统的集合。注：这里的自治意味着计算机拥有自己的硬件和软件，可以单独运行使用。</p>
@@ -279,12 +294,268 @@
 <h5 id="5．多路复用技术的一般形式"><a href="#5．多路复用技术的一般形式" class="headerlink" title="5．多路复用技术的一般形式"></a>5．多路复用技术的一般形式</h5><p>直接使用思维导图的：</p>
 <p><img src="/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/%E4%BF%A1%E9%81%93%E5%A4%8D%E7%94%A8.jpg"></p>
 <h5 id="6．CSMA-CD-协议"><a href="#6．CSMA-CD-协议" class="headerlink" title="6．CSMA&#x2F;CD 协议"></a>6．CSMA&#x2F;CD 协议</h5><p>CSMA&#x2F;CD协议的要点如下:<br>(1)准备发送:适配器从网络层获得一个分组，加上以太网的首部和尾部，组成以太网帧，放入适配器的缓存中。但在发送之前，必须先检测信道。<br>(2）检测信道:若检测到信道忙，则继续不停地检测，一直等待信道转为空闲。此时若在96比特时间内信道保持空闲（保证了帧间最小间隔)，就发送这个帧。<br>(3)在发送过程中仍不停地检测信道，即网络适配器要边发送边监听。这里只有两种可能性:<br>①发送成功:如果在争用期内一直未检测到碰撞，就认为发送成功（如果接收方收到了有差错的帧，就丢弃它，后续的工作由高层来处理)。发送完毕后，其他什么也不做。然后回到(1)。<br>②发送失败:在争用期内检测到碰撞。这时立即停止发送数据，并按规定发送人为干扰信号。适配器接着就执行指数退避算法，等待，倍512比特时间后，返回到步骤(2)，继续检测信道。但若重传达16次仍不能成功，则停止重传而向上报错。<br>以太网每发送完一帧，一定要把已发送的帧暂时保留一下。如果在争用期内检测出发生了碰撞，那么还要在推迟一段时间后再把这个暂时保留的帧重传一次。</p>
-<h5 id="7．局域网的主要特征"><a href="#7．局域网的主要特征" class="headerlink" title="7．局域网的主要特征"></a>7．局域网的主要特征</h5><p><img src="/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/%E5%B1%80%E5%9F%9F%E7%BD%91%E7%9A%84%E4%B8%BB%E8%A6%81%E7%89%B9%E7%82%B9.jpg"></p>
-<h5 id="8．以太网物理层和-MAC-子层的功能"><a href="#8．以太网物理层和-MAC-子层的功能" class="headerlink" title="8．以太网物理层和 MAC 子层的功能"></a>8．以太网物理层和 MAC 子层的功能</h5><p><img src="/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/%E4%BB%A5%E5%A4%AA%E7%BD%91%E6%A0%87%E5%87%86.jpg"></p>
-<h5 id="9．以太网的帧格式"><a href="#9．以太网的帧格式" class="headerlink" title="9．以太网的帧格式"></a>9．以太网的帧格式</h5><p><img src="/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/MAC%E5%B8%A7%E6%A0%BC%E5%BC%8F.jpg"></p>
-<h5 id="10．广域网的主要特性"><a href="#10．广域网的主要特性" class="headerlink" title="10．广域网的主要特性"></a>10．广域网的主要特性</h5><p><img src="/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/%E5%B9%BF%E5%9F%9F%E7%BD%91%E7%89%B9%E7%82%B9.jpg"></p>
-<h5 id="11-数据报服务的特点"><a href="#11-数据报服务的特点" class="headerlink" title="11. 数据报服务的特点"></a>11. 数据报服务的特点</h5><p>累了，休息一会儿再继续。。。</p>
-<h5 id="12．虚电路服务与数据报服务的主要区别"><a href="#12．虚电路服务与数据报服务的主要区别" class="headerlink" title="12．虚电路服务与数据报服务的主要区别"></a>12．虚电路服务与数据报服务的主要区别</h5><h5 id="13．PPP-组成"><a href="#13．PPP-组成" class="headerlink" title="13．PPP 组成"></a>13．PPP 组成</h5><h5 id="14．HDLC-的帧结构"><a href="#14．HDLC-的帧结构" class="headerlink" title="14．HDLC 的帧结构"></a>14．HDLC 的帧结构</h5><h5 id="15．网桥的概念以及类型"><a href="#15．网桥的概念以及类型" class="headerlink" title="15．网桥的概念以及类型"></a>15．网桥的概念以及类型</h5><h5 id="16．以太网的工作原理和信道的利用率"><a href="#16．以太网的工作原理和信道的利用率" class="headerlink" title="16．以太网的工作原理和信道的利用率"></a>16．以太网的工作原理和信道的利用率</h5><h5 id="17．纯-ALOHA-和时隙-ALOHA-的结论"><a href="#17．纯-ALOHA-和时隙-ALOHA-的结论" class="headerlink" title="17．纯 ALOHA 和时隙 ALOHA 的结论"></a>17．纯 ALOHA 和时隙 ALOHA 的结论</h5><h5 id="18-CSMA-CD-的原理和吞吐量的计算"><a href="#18-CSMA-CD-的原理和吞吐量的计算" class="headerlink" title="18. CSMA&#x2F;CD 的原理和吞吐量的计算"></a>18. CSMA&#x2F;CD 的原理和吞吐量的计算</h5><h5 id="19．VLAN-的概念"><a href="#19．VLAN-的概念" class="headerlink" title="19．VLAN 的概念"></a>19．VLAN 的概念</h5><h5 id="20．划分-VLAN-的方法"><a href="#20．划分-VLAN-的方法" class="headerlink" title="20．划分 VLAN 的方法"></a>20．划分 VLAN 的方法</h5><h4 id="（四）网络层"><a href="#（四）网络层" class="headerlink" title="（四）网络层"></a>（四）网络层</h4><h5 id="1．网络的异构性表现在哪些方面"><a href="#1．网络的异构性表现在哪些方面" class="headerlink" title="1．网络的异构性表现在哪些方面"></a>1．网络的异构性表现在哪些方面</h5><h5 id="2．中继系统的种类"><a href="#2．中继系统的种类" class="headerlink" title="2．中继系统的种类"></a>2．中继系统的种类</h5><h5 id="3．拥塞控制算法"><a href="#3．拥塞控制算法" class="headerlink" title="3．拥塞控制算法"></a>3．拥塞控制算法</h5><h5 id="4．距离向量路由算法"><a href="#4．距离向量路由算法" class="headerlink" title="4．距离向量路由算法"></a>4．距离向量路由算法</h5><h5 id="5．链路状态路由算法"><a href="#5．链路状态路由算法" class="headerlink" title="5．链路状态路由算法"></a>5．链路状态路由算法</h5><h5 id="6．IP-地址的分类及其表示"><a href="#6．IP-地址的分类及其表示" class="headerlink" title="6．IP 地址的分类及其表示"></a>6．IP 地址的分类及其表示</h5><h5 id="7．IP-数据报的结构及其每个域的意义"><a href="#7．IP-数据报的结构及其每个域的意义" class="headerlink" title="7．IP 数据报的结构及其每个域的意义"></a>7．IP 数据报的结构及其每个域的意义</h5><h5 id="8．子网及其掩码"><a href="#8．子网及其掩码" class="headerlink" title="8．子网及其掩码"></a>8．子网及其掩码</h5><h5 id="9．CIDR"><a href="#9．CIDR" class="headerlink" title="9．CIDR"></a>9．CIDR</h5><h5 id="10．ICMP-差错报告报文的种类"><a href="#10．ICMP-差错报告报文的种类" class="headerlink" title="10．ICMP 差错报告报文的种类"></a>10．ICMP 差错报告报文的种类</h5><h5 id="11．OSPF"><a href="#11．OSPF" class="headerlink" title="11．OSPF"></a>11．OSPF</h5><h5 id="12．IP-多播的概念和多播地址"><a href="#12．IP-多播的概念和多播地址" class="headerlink" title="12．IP 多播的概念和多播地址"></a>12．IP 多播的概念和多播地址</h5><h5 id="13．转交地址的分类"><a href="#13．转交地址的分类" class="headerlink" title="13．转交地址的分类"></a>13．转交地址的分类</h5><h5 id="14．路由器的优缺点"><a href="#14．路由器的优缺点" class="headerlink" title="14．路由器的优缺点"></a>14．路由器的优缺点</h5><h4 id="（五）传输层"><a href="#（五）传输层" class="headerlink" title="（五）传输层"></a>（五）传输层</h4><h5 id="1．传输层寻址与端口"><a href="#1．传输层寻址与端口" class="headerlink" title="1．传输层寻址与端口"></a>1．传输层寻址与端口</h5><h5 id="2．无连接服务与面向连接服务"><a href="#2．无连接服务与面向连接服务" class="headerlink" title="2．无连接服务与面向连接服务"></a>2．无连接服务与面向连接服务</h5><h5 id="3-传输连接的建立与释放"><a href="#3-传输连接的建立与释放" class="headerlink" title="3. 传输连接的建立与释放"></a>3. 传输连接的建立与释放</h5><h5 id="4-UDP-的优点"><a href="#4-UDP-的优点" class="headerlink" title="4. UDP 的优点"></a>4. UDP 的优点</h5><h5 id="5-UDP-和-TCP-报文段报头格式"><a href="#5-UDP-和-TCP-报文段报头格式" class="headerlink" title="5. UDP 和 TCP 报文段报头格式"></a>5. UDP 和 TCP 报文段报头格式</h5><h5 id="6-TCP-的流量控制"><a href="#6-TCP-的流量控制" class="headerlink" title="6. TCP 的流量控制"></a>6. TCP 的流量控制</h5><h5 id="7．TCP-的拥塞控制"><a href="#7．TCP-的拥塞控制" class="headerlink" title="7．TCP 的拥塞控制"></a>7．TCP 的拥塞控制</h5><h5 id="8-TCP-传送连接的管理"><a href="#8-TCP-传送连接的管理" class="headerlink" title="8. TCP 传送连接的管理"></a>8. TCP 传送连接的管理</h5><h4 id="（六）应用层"><a href="#（六）应用层" class="headerlink" title="（六）应用层"></a>（六）应用层</h4><h5 id="1-C-S-结构的优点"><a href="#1-C-S-结构的优点" class="headerlink" title="1. C&#x2F;S 结构的优点"></a>1. C&#x2F;S 结构的优点</h5><h5 id="2．DNS-的层次结构"><a href="#2．DNS-的层次结构" class="headerlink" title="2．DNS 的层次结构"></a>2．DNS 的层次结构</h5><h5 id="3．域名服务器的类型"><a href="#3．域名服务器的类型" class="headerlink" title="3．域名服务器的类型"></a>3．域名服务器的类型</h5><h5 id="4．Internet-的应用协议-FTP，MIME，HTTP"><a href="#4．Internet-的应用协议-FTP，MIME，HTTP" class="headerlink" title="4．Internet 的应用协议:FTP，MIME，HTTP"></a>4．Internet 的应用协议:FTP，MIME，HTTP</h5><h5 id="5．Web-页面文档的分类"><a href="#5．Web-页面文档的分类" class="headerlink" title="5．Web 页面文档的分类"></a>5．Web 页面文档的分类</h5><h5 id="6．生成动态文档的方法"><a href="#6．生成动态文档的方法" class="headerlink" title="6．生成动态文档的方法"></a>6．生成动态文档的方法</h5><h5 id="7．生成活动文档的方法"><a href="#7．生成活动文档的方法" class="headerlink" title="7．生成活动文档的方法"></a>7．生成活动文档的方法</h5><h5 id="8．URL-的格式"><a href="#8．URL-的格式" class="headerlink" title="8．URL 的格式"></a>8．URL 的格式</h5><h5 id="9．网络管理系统逻辑模型"><a href="#9．网络管理系统逻辑模型" class="headerlink" title="9．网络管理系统逻辑模型"></a>9．网络管理系统逻辑模型</h5><h5 id="10．网络管理的主要功能"><a href="#10．网络管理的主要功能" class="headerlink" title="10．网络管理的主要功能"></a>10．网络管理的主要功能</h5><h5 id="11．被管对象的特性"><a href="#11．被管对象的特性" class="headerlink" title="11．被管对象的特性"></a>11．被管对象的特性</h5><h5 id="12．SNMP-的基本元素"><a href="#12．SNMP-的基本元素" class="headerlink" title="12．SNMP 的基本元素"></a>12．SNMP 的基本元素</h5><h5 id="13．SNMPv3-的安全模式"><a href="#13．SNMPv3-的安全模式" class="headerlink" title="13．SNMPv3 的安全模式"></a>13．SNMPv3 的安全模式</h5><h4 id="（七）网络安全"><a href="#（七）网络安全" class="headerlink" title="（七）网络安全"></a>（七）网络安全</h4><h5 id="1．网络面临的-4-种威胁-截获、中断、篡改、伪造"><a href="#1．网络面临的-4-种威胁-截获、中断、篡改、伪造" class="headerlink" title="1．网络面临的 4 种威胁:截获、中断、篡改、伪造"></a>1．网络面临的 4 种威胁:截获、中断、篡改、伪造</h5><h5 id="2．替代加密和置换加密"><a href="#2．替代加密和置换加密" class="headerlink" title="2．替代加密和置换加密"></a>2．替代加密和置换加密</h5><h5 id="3．秘密密钥加密算法：DES（明文位数，密钥位数，分组密码）"><a href="#3．秘密密钥加密算法：DES（明文位数，密钥位数，分组密码）" class="headerlink" title="3．秘密密钥加密算法：DES（明文位数，密钥位数，分组密码）"></a>3．秘密密钥加密算法：DES（明文位数，密钥位数，分组密码）</h5><h5 id="4．公开密钥算法的特点"><a href="#4．公开密钥算法的特点" class="headerlink" title="4．公开密钥算法的特点"></a>4．公开密钥算法的特点</h5><h5 id="5．公开密钥加密算法：RSA"><a href="#5．公开密钥加密算法：RSA" class="headerlink" title="5．公开密钥加密算法：RSA"></a>5．公开密钥加密算法：RSA</h5><h5 id="6．数字签名"><a href="#6．数字签名" class="headerlink" title="6．数字签名"></a>6．数字签名</h5><h4 id="（八）视频、音频与无线网络"><a href="#（八）视频、音频与无线网络" class="headerlink" title="（八）视频、音频与无线网络"></a>（八）视频、音频与无线网络</h4><h5 id="1．RTP、RTCP、QoS-等的概念"><a href="#1．RTP、RTCP、QoS-等的概念" class="headerlink" title="1．RTP、RTCP、QoS 等的概念"></a>1．RTP、RTCP、QoS 等的概念</h5><h5 id="2、时延、时延抖动等的处理"><a href="#2、时延、时延抖动等的处理" class="headerlink" title="2、时延、时延抖动等的处理"></a>2、时延、时延抖动等的处理</h5><h5 id="3、WLan、WPan、WMan、WLL-的概念"><a href="#3、WLan、WPan、WMan、WLL-的概念" class="headerlink" title="3、WLan、WPan、WMan、WLL 的概念"></a>3、WLan、WPan、WMan、WLL 的概念</h5><h5 id="4、无线局域网的-DCF-和-PCF"><a href="#4、无线局域网的-DCF-和-PCF" class="headerlink" title="4、无线局域网的 DCF 和 PCF"></a>4、无线局域网的 DCF 和 PCF</h5><h5 id="5、CSMA-CA-协议的原理"><a href="#5、CSMA-CA-协议的原理" class="headerlink" title="5、CSMA&#x2F;CA 协议的原理"></a>5、CSMA&#x2F;CA 协议的原理</h5><h4 id="（九）下一代因特网"><a href="#（九）下一代因特网" class="headerlink" title="（九）下一代因特网"></a>（九）下一代因特网</h4><h5 id="1．IPv6-的特点"><a href="#1．IPv6-的特点" class="headerlink" title="1．IPv6 的特点"></a>1．IPv6 的特点</h5><h5 id="2．P2P-技术的特点"><a href="#2．P2P-技术的特点" class="headerlink" title="2．P2P 技术的特点"></a>2．P2P 技术的特点</h5><h5 id="3．标记交换原理"><a href="#3．标记交换原理" class="headerlink" title="3．标记交换原理"></a>3．标记交换原理</h5><h5 id="4．MPLS-的封装"><a href="#4．MPLS-的封装" class="headerlink" title="4．MPLS 的封装"></a>4．MPLS 的封装</h5><h5 id="5．标记分配的方式"><a href="#5．标记分配的方式" class="headerlink" title="5．标记分配的方式"></a>5．标记分配的方式</h5><h5 id="6．与以路由器作为核心网络平台的技术相比，MPLS-的主要优点"><a href="#6．与以路由器作为核心网络平台的技术相比，MPLS-的主要优点" class="headerlink" title="6．与以路由器作为核心网络平台的技术相比，MPLS 的主要优点"></a>6．与以路由器作为核心网络平台的技术相比，MPLS 的主要优点</h5><h5 id="7．Intserv-的局限性"><a href="#7．Intserv-的局限性" class="headerlink" title="7．Intserv 的局限性"></a>7．Intserv 的局限性</h5><h5 id="8．DiffServ-的体系结构"><a href="#8．DiffServ-的体系结构" class="headerlink" title="8．DiffServ 的体系结构"></a>8．DiffServ 的体系结构</h5><h5 id="9．DiffServ-的技术特点"><a href="#9．DiffServ-的技术特点" class="headerlink" title="9．DiffServ 的技术特点"></a>9．DiffServ 的技术特点</h5><h5 id="10-SDN-网络"><a href="#10-SDN-网络" class="headerlink" title="10. SDN 网络"></a>10. SDN 网络</h5><p>详细内容请访问：cquptky803.cn</p>
+<h5 id="7．局域网的主要特征"><a href="#7．局域网的主要特征" class="headerlink" title="7．局域网的主要特征"></a>7．局域网的主要特征</h5><p>直接使用思维导图的：</p>
+<p><img src="/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/%E5%B1%80%E5%9F%9F%E7%BD%91%E7%9A%84%E4%B8%BB%E8%A6%81%E7%89%B9%E7%82%B9.jpg"></p>
+<h5 id="8．以太网物理层和-MAC-子层的功能"><a href="#8．以太网物理层和-MAC-子层的功能" class="headerlink" title="8．以太网物理层和 MAC 子层的功能"></a>8．以太网物理层和 MAC 子层的功能</h5><p>直接使用思维导图的：</p>
+<p><img src="/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/%E4%BB%A5%E5%A4%AA%E7%BD%91%E6%A0%87%E5%87%86.jpg"></p>
+<h5 id="9．以太网的帧格式"><a href="#9．以太网的帧格式" class="headerlink" title="9．以太网的帧格式"></a>9．以太网的帧格式</h5><p>直接使用思维导图的：</p>
+<p><img src="/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/MAC%E5%B8%A7%E6%A0%BC%E5%BC%8F.jpg"></p>
+<h5 id="10．广域网的主要特性"><a href="#10．广域网的主要特性" class="headerlink" title="10．广域网的主要特性"></a>10．广域网的主要特性</h5><p>直接使用思维导图的：</p>
+<p><img src="/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/%E5%B9%BF%E5%9F%9F%E7%BD%91%E7%89%B9%E7%82%B9.jpg"></p>
+<h5 id="11-数据报服务的特点"><a href="#11-数据报服务的特点" class="headerlink" title="11. 数据报服务的特点"></a>11. 数据报服务的特点</h5><p>数据报服务是一种网络传输层服务，具有以下特点：</p>
+<ol>
+<li><p>无连接性：数据报服务是无连接的，每个数据报都是独立的，不需要在发送前建立连接。发送方将数据打包成数据报，并在每个数据报中包含目标地址和源地址等必要信息，以便独立地路由和传送。</p>
+</li>
+<li><p>不可靠性：数据报服务不提供可靠性保证。数据报在传输过程中可能会丢失、重复、损坏或以不同的顺序到达。没有确认机制或重传机制来确保数据可靠传输。</p>
+</li>
+<li><p>最大长度限制：数据报服务对数据报的长度进行限制。如果数据报超过最大长度，将被分片成更小的片段进行传输，并在接收端进行重新组装。每个片段都是独立传输的。</p>
+</li>
+<li><p>基于尽力而为的交付：数据报服务提供尽力而为的交付，即尽最大努力将数据报从发送方传递到接收方。网络尽力传输数据报，但不保证可靠性和按时交付。</p>
+</li>
+<li><p>无状态性：数据报服务是无状态的，即网络节点不会维护任何关于数据报传输的状态信息。每个数据报都包含足够的信息，使其能够独立地进行路由选择。</p>
+</li>
+<li><p>灵活性和独立性：数据报服务具有灵活性和独立性，每个数据报都是独立的实体，可以根据需要自由选择传输路径。数据报服务适用于各种网络环境和协议。</p>
+</li>
+</ol>
+<h5 id="12．虚电路服务与数据报服务的主要区别"><a href="#12．虚电路服务与数据报服务的主要区别" class="headerlink" title="12．虚电路服务与数据报服务的主要区别"></a>12．虚电路服务与数据报服务的主要区别</h5><table>
+<thead>
+<tr>
+<th align="left">方式</th>
+<th align="left">虚电路</th>
+<th align="left">数据报</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">思路</td>
+<td align="left">可靠通信应当由网络来保证</td>
+<td align="left">可靠通信应当由用户主机来保证</td>
+</tr>
+<tr>
+<td align="left">连接的建立</td>
+<td align="left">必须有</td>
+<td align="left">不需要</td>
+</tr>
+<tr>
+<td align="left">终点地址</td>
+<td align="left">仅在连接建立阶段使用， 每个分组使用短的虚电路号</td>
+<td align="left">每个分组都有终点的完整地址，即IP地址</td>
+</tr>
+<tr>
+<td align="left">分组的转发</td>
+<td align="left">属于同一条虚电路的分组均按照同一路由进行转发</td>
+<td align="left">每个分组独立查找转发表进行转发</td>
+</tr>
+<tr>
+<td align="left">当节点出故障时</td>
+<td align="left">当节点出故障时所有通过出故障的节点的虚电路均不能工作</td>
+<td align="left">出故障的节点可能会丢失分组，一些路由可能会发生变化</td>
+</tr>
+<tr>
+<td align="left">分组的顺序</td>
+<td align="left">总是按发送顺序到达终点</td>
+<td align="left">到达终点的顺序不一定按发送的顺序</td>
+</tr>
+<tr>
+<td align="left">端到端的差错处理和流量控制</td>
+<td align="left">可以由网络负责，也可以由用户主机负责</td>
+<td align="left">由用户主机负责</td>
+</tr>
+</tbody></table>
+<h5 id="13．PPP-组成"><a href="#13．PPP-组成" class="headerlink" title="13．PPP 组成"></a>13．PPP 组成</h5><p>PPP协议有三个组成部分:<br>(1)一个将IP数据报封装到串行链路的方法。PPP既支持异步链路（无奇偶检验的8比特数据)，也支持面向比特的同步链路。IP数据报在PPP帧中就是其信息部分。这个信息部分的长度受最大传送单元MTU 的限制。</p>
+<p>(2)一个用来建立、配置和测试数据链路连接的链路控制协议 LCP(Link ControlProtocol)。通信的双方可协商一些选项。在RFC 1661中定义了11种类型的LCP分组</p>
+<p>(3)一套网络控制协议NCP(Network Control Protocol)R，其中的每一个协议支持不同的网络层协议，如IP、OSI的网络层、DECnet和 AppleTalk等。</p>
+<h5 id="14．HDLC-的帧结构"><a href="#14．HDLC-的帧结构" class="headerlink" title="14．HDLC 的帧结构"></a>14．HDLC 的帧结构</h5><ol>
+<li>帧起始标志（Flag）：占1字节，HDLC帧以一个特定的标志字节作为起始标志，通常是01111110。</li>
+<li>地址字段（Address）：占1字节，可选字段，用于多点链路中的多个站点进行寻址。在点对点链路中，通常将地址字段设置为一个字节的长度。</li>
+<li>控制字段（Control）：占1字节，控制字段指示了帧的类型和控制信息。它通常是一个字节的长度，其中包括指令和响应等信息。</li>
+<li>数据字段（Data）：数据字段是可选的，用于携带上层协议的数据。其长度可以根据需要变化。</li>
+<li>帧校验序列（FCS）：FCS字段用于检测传输过程中是否发生了错误。它通常是一个2字节或4字节的循环冗余校验码（CRC）。</li>
+<li>帧结束标志（Flag）：占1字节，与起始标志相同的标志字节，用于表示帧的结束。</li>
+</ol>
+<h5 id="15．网桥的概念以及类型"><a href="#15．网桥的概念以及类型" class="headerlink" title="15．网桥的概念以及类型"></a>15．网桥的概念以及类型</h5><p>网桥的主要功能是在不同的局域网之间转发数据帧，它通过学习和维护网络中各个主机的MAC地址和端口之间的对应关系，实现数据的转发和过滤。网桥工作在数据链路层，根据目标MAC地址在不同的局域网之间转发数据帧，以实现局域网之间的通信。</p>
+<p>根据实现和功能的不同，可以将网桥分为以下几种类型：</p>
+<ol>
+<li><p>透明网桥（Transparent Bridge）：透明网桥是最常见的网桥类型，它在不同的局域网之间转发数据帧时不会改变数据帧的内容，即不会修改MAC帧的源和目标地址。透明网桥工作在数据链路层，通过学习和维护MAC地址表来实现数据转发。</p>
+</li>
+<li><p>源路由网桥（Source Routing Bridge）：源路由网桥在数据帧中包含了完整的路径信息，指示了数据帧从源主机到目标主机的路径。源路由网桥根据路径信息来转发数据帧，而不是根据学习的MAC地址表。这种类型的网桥在现代网络中很少使用。</p>
+</li>
+<li><p>交换式网桥（Switching Bridge）：交换式网桥是一种高性能的网桥，它使用专用的交换芯片来实现快速的数据转发。交换式网桥在每个端口上维护一个独立的缓冲区和转发表，可以同时进行多个数据帧的转发，提供更高的带宽和低延迟。</p>
+</li>
+<li><p>无线网桥（Wireless Bridge）：无线网桥是连接无线局域网（WLAN）之间的设备，用于扩展无线网络的覆盖范围。无线网桥接收无线信号并将其转换为有线信号，然后通过有线连接将数据传输到另一个无线网桥或有线网络。</p>
+</li>
+</ol>
+<h5 id="16．以太网的工作原理和信道的利用率"><a href="#16．以太网的工作原理和信道的利用率" class="headerlink" title="16．以太网的工作原理和信道的利用率"></a>16．以太网的工作原理和信道的利用率</h5><p><strong>以太网的工作原理如下：</strong></p>
+<ol>
+<li><p>媒体访问控制（MAC）：每个连接到以太网的设备都有一个唯一的MAC地址。设备在发送数据之前会监听传输介质（如电缆），如果没有检测到其他设备正在发送数据，它就可以开始发送。</p>
+</li>
+<li><p>CSMA&#x2F;CD：当多个设备同时开始发送数据时，可能会发生冲突（collision）。冲突检测是通过设备在发送数据的同时监听网络上的信号来实现的。如果设备检测到冲突，它会立即停止发送，并等待一段随机的时间后再次尝试发送。</p>
+</li>
+<li><p>帧封装：数据在以太网中被封装成帧的形式进行传输。每个以太网帧包括目标MAC地址、源MAC地址、类型&#x2F;长度字段和数据字段。帧的最小长度为64字节，如果数据长度不足64字节，则使用填充字段进行填充。</p>
+</li>
+<li><p>交换机：在以太网中，交换机用于连接多个设备，并根据MAC地址来转发数据帧。交换机通过学习每个端口上设备的MAC地址，建立一个转发表，以便在接收到帧时快速确定转发的目标端口。</p>
+<p><strong>信道利用率</strong></p>
+<p>发送帧需要的时间是T，成功发送一个帧要占用信道T+τ（端到端时延τ），因此极限信道利用率S&#x3D;T&#x2F;（T+τ）&#x3D;1&#x2F;（1+a），a&#x3D;τ&#x2F;T，</p>
+</li>
+</ol>
+<h5 id="17．纯-ALOHA-和时隙-ALOHA-的结论"><a href="#17．纯-ALOHA-和时隙-ALOHA-的结论" class="headerlink" title="17．纯 ALOHA 和时隙 ALOHA 的结论"></a>17．纯 ALOHA 和时隙 ALOHA 的结论</h5><p>直接使用思维导图里的：</p>
+<p><img src="/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/ALOHA%E5%8D%8F%E8%AE%AE.jpg"></p>
+<h5 id="18-CSMA-CD-的原理和吞吐量的计算"><a href="#18-CSMA-CD-的原理和吞吐量的计算" class="headerlink" title="18. CSMA&#x2F;CD 的原理和吞吐量的计算"></a>18. CSMA&#x2F;CD 的原理和吞吐量的计算</h5><p>可以参考第6点的，也可以看思维导图的：</p>
+<p><img src="/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/CSMACD%E5%8D%8F%E8%AE%AE.jpg"></p>
+<h5 id="19．VLAN-的概念"><a href="#19．VLAN-的概念" class="headerlink" title="19．VLAN 的概念"></a>19．VLAN 的概念</h5><p>虚拟局域网 VLAN 是由一些局域网网段构成的、与物理位置无关的逻辑组，而这些网段具有某些共同的需求。每一个 VLAN 的帧都有一个明确的标识符，指明发送这个帧的计算机属于哪一个 VLAN 。</p>
+<h5 id="20．划分-VLAN-的方法"><a href="#20．划分-VLAN-的方法" class="headerlink" title="20．划分 VLAN 的方法"></a>20．划分 VLAN 的方法</h5><p><img src="/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/%E5%88%92%E5%88%86VLAN.jpg"></p>
+<h4 id="（四）网络层"><a href="#（四）网络层" class="headerlink" title="（四）网络层"></a>（四）网络层</h4><h5 id="1．网络的异构性表现在哪些方面"><a href="#1．网络的异构性表现在哪些方面" class="headerlink" title="1．网络的异构性表现在哪些方面"></a>1．网络的异构性表现在哪些方面</h5><ol>
+<li>设备异构性：网络中使用各种不同类型的设备，如计算机、手机、路由器、交换机等，这些设备在硬件和软件配置上存在差异，具有不同的处理能力和功能。</li>
+<li>协议异构性：网络中使用多种不同的通信协议，如TCP&#x2F;IP、HTTP、FTP等，这些协议在数据格式、传输方式和工作机制上存在差异，用于实现不同的网络功能和应用。</li>
+<li>媒介异构性：网络中使用多种不同的传输媒介，如有线媒介（如光纤、电缆）、无线媒介（如Wi-Fi、蓝牙）以及卫星通信等，这些媒介在传输速率、传输距离和可靠性上存在差异。</li>
+<li>拓扑异构性：网络中存在不同的网络拓扑结构，如星型、环形、树形、网状等，这些拓扑结构影响着网络的可扩展性、冗余性和性能表现。</li>
+</ol>
+<h5 id="2．中继系统的种类"><a href="#2．中继系统的种类" class="headerlink" title="2．中继系统的种类"></a>2．中继系统的种类</h5><ol>
+<li>物理层使用的中间设备叫作转发器(repeater)。</li>
+<li>数据链路层使用的中间设备叫作网桥或桥接器(bridge)，以及交换机(switch)。</li>
+<li>网络层使用的中间设备叫作路由器(router)。</li>
+<li>在网络层以上使用的中间设备叫作网关(gateway)。用网关连接两个不兼容的系统需是在高层进行协议的转换。</li>
+</ol>
+<h5 id="3．拥塞控制算法"><a href="#3．拥塞控制算法" class="headerlink" title="3．拥塞控制算法"></a>3．拥塞控制算法</h5><ol>
+<li><p>基于包丢失的算法：</p>
+<ul>
+<li>传统的TCP拥塞控制算法（如TCP Tahoe和TCP Reno）通过检测数据包丢失来判断网络是否发生拥塞，并相应地减少发送速率。</li>
+<li>TCP Vegas算法通过测量往返时间（RTT）来估计网络拥塞程度，并动态地调整发送速率。</li>
+</ul>
+</li>
+<li><p>基于队列长度的算法：</p>
+<ul>
+<li>队列管理算法（如随机早期检测算法，Random Early Detection，简称RED）通过监测队列中的数据包数量来判断网络是否拥塞，并在达到一定阈值时丢弃部分数据包，以控制发送速率。</li>
+<li>队列管理算法中的变种算法，如Weighted RED（WRED）和Explicit Congestion Notification（ECN），通过给不同数据包设置不同的丢弃概率或标记，以便发送方相应地调整发送速率。</li>
+</ul>
+</li>
+<li><p>基于反馈的算法：</p>
+<ul>
+<li>基于反馈的拥塞控制算法，如网络状态反馈（Network Feedback）和主动队列管理（Active Queue Management，简称AQM），通过接收到的网络反馈信息来调整发送速率。</li>
+<li>基于反馈的算法中的一个代表是基于随机早期检测算法的主动队列管理（Random Early Detection，简称RED-AQM），它根据队列长度和网络反馈信息来调整丢包概率和发送速率。</li>
+</ul>
+</li>
+</ol>
+<h5 id="4．距离向量路由算法"><a href="#4．距离向量路由算法" class="headerlink" title="4．距离向量路由算法"></a>4．距离向量路由算法</h5><p>对每一个相邻路由器发送过来的RIP报文，执行以下步骤:</p>
+<p>(1)对地址为X的相邻路由器发来的RIP报文，先修改此报文中的所有项目:把“下一跳”字段中的地址都改为X，并把所有的“距离”字段的值加1。每一个项目都有三个关键数据，即:到目的网络Net，距离是d，下一跳路由器是X。</p>
+<p>(2)对修改后的RIP报文中的每一个项目，进行以下步骤:</p>
+<p>若原来的路由表中没有目的网络Net，则把该项目添加到路由表中。否则（即在路由表中有目的网络 Net，这时就再查看下一跳路由器地址)。</p>
+<p>若下一跳路由器地址是X，则把收到的项目替换原路由表中的项目。否则(即这个项目是:到目的网络Net，但下一跳路由器不是X)。</p>
+<p>若收到的项目中的距离d小于路由表中的距离，则进行更新，否则什么也不做。</p>
+<p>(3)若3分钟还没有收到相邻路由器的更新路由表，则把此相邻路由器记为不可达的路由器，即把距离置为16（距离为16表示不可达)。</p>
+<p>(4)返回。</p>
+<h5 id="5．链路状态路由算法"><a href="#5．链路状态路由算法" class="headerlink" title="5．链路状态路由算法"></a>5．链路状态路由算法</h5><p>最著名的链路状态路由算法是迪杰斯特拉算法（Dijkstra’s algorithm）。以下是链路状态路由算法的一般步骤：</p>
+<ol>
+<li><p>拓扑发现：每个节点收集与其直接相连的链路状态信息，包括连接的邻居节点和链路的开销（例如，带宽、延迟等）。</p>
+</li>
+<li><p>构建拓扑图：使用收集到的链路状态信息构建网络的全局拓扑图，表示节点之间的连接关系。</p>
+</li>
+<li><p>初始化：选择一个起始节点，并将其距离设置为0，将其他节点的距离设置为无穷大。</p>
+</li>
+<li><p>选择最短路径：从起始节点开始，通过比较节点的距离和已知最短路径，选择距离最小的节点作为下一跳节点。</p>
+</li>
+<li><p>更新距离：对于选择的下一跳节点，更新其邻居节点的距离，如果通过该下一跳节点可以获得更短的路径。</p>
+</li>
+<li><p>重复步骤4和步骤5，直到计算出到达目标节点的最短路径。</p>
+</li>
+<li><p>构建路由表：根据计算出的最短路径，每个节点构建自己的路由表，指示通过哪个邻居节点发送数据包。</p>
+</li>
+</ol>
+<p>链路状态路由算法具有全局信息并能够计算出最短路径，但其计算和更新开销较大，尤其在大规模网络中。因此，链路状态路由算法通常用于相对较小的网络或在网络拓扑变化不频繁的情况下。常见的链路状态路由协议包括开放最短路径优先（Open Shortest Path First，OSPF）和中间系统到中间系统（Intermediate System to Intermediate System，IS-IS）等。</p>
+<h5 id="6．IP-地址的分类及其表示"><a href="#6．IP-地址的分类及其表示" class="headerlink" title="6．IP 地址的分类及其表示"></a>6．IP 地址的分类及其表示</h5><p>  <strong>IP地址的分类：</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">类别</th>
+<th align="left">起始编码</th>
+<th align="left">长度</th>
+<th align="left">范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">A类地址</td>
+<td align="left">0</td>
+<td align="left">网络号8位；主机号24位</td>
+<td align="left">1.0.0.0～126.255.255.255</td>
+</tr>
+<tr>
+<td align="left">B类地址</td>
+<td align="left">10</td>
+<td align="left">网络号16位，主机号16位</td>
+<td align="left">128.0.0.0～191.255.255.255</td>
+</tr>
+<tr>
+<td align="left">C类地址</td>
+<td align="left">110</td>
+<td align="left">网络号24位；主机号8位</td>
+<td align="left">192.0.0.0～223.255.255.255</td>
+</tr>
+<tr>
+<td align="left">D类地址</td>
+<td align="left">1110</td>
+<td align="left">多播地址28位</td>
+<td align="left">224.0.0.0～239.255.255.255</td>
+</tr>
+<tr>
+<td align="left">E类地址</td>
+<td align="left">1111</td>
+<td align="left">保留用于试验和将来使用</td>
+<td align="left">240.0.0.0～255.255.255.254</td>
+</tr>
+</tbody></table>
+<p>​	注意：网络号为127这个地址不是A类地址，而是叫环回地址；255.255.255.255叫受限广播地址。</p>
+<p><strong>IP地址表示：</strong></p>
+<p>早期二级结构的IP地址：网络号+主机号</p>
+<p>使用子网划分的IP地址：网络号＋子网号＋主机号</p>
+<p>使用CIDR的IP地址：网络前缀+主机号</p>
+<h5 id="7．IP-数据报的结构及其每个域的意义"><a href="#7．IP-数据报的结构及其每个域的意义" class="headerlink" title="7．IP 数据报的结构及其每个域的意义"></a>7．IP 数据报的结构及其每个域的意义</h5><p><strong>IP数据报结构：</strong></p>
+<p><img src="/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/IP%E6%A0%BC%E5%BC%8F.jpg"></p>
+<p>直接使用思维导图里的：</p>
+<p><img src="/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/IP%E6%A0%BC%E5%BC%8F2.jpg"></p>
+<h5 id="8．子网及其掩码"><a href="#8．子网及其掩码" class="headerlink" title="8．子网及其掩码"></a>8．子网及其掩码</h5><p>子网是将一个大的网络分割成更小的网络的方式。子网划分允许更有效地管理IP地址，并提供更精细的网络控制和管理。每个子网都有自己的网络地址和主机范围。</p>
+<p>子网掩码是用于指示IP地址中哪些位用于网络部分和主机部分的掩码。它与IP地址进行逻辑与（AND）运算，以确定IP地址中的网络部分。</p>
+<h5 id="9．CIDR"><a href="#9．CIDR" class="headerlink" title="9．CIDR"></a>9．CIDR</h5><p>CIDR（Classless Inter-Domain Routing）是一种用于对IP地址进行编址和路由的技术。CIDR取代了传统的基于类别的IP地址分配方法，使得网络地址的分配更加灵活和高效。CIDR使用一个斜线后跟数字的表示法，例如，192.168.0.0&#x2F;24。斜线后面的数字表示网络部分的位数，也即子网掩码中连续的1的位数。这样，CIDR地址可以直接表示网络的大小，而无需依赖于特定的地址类别（A类、B类、C类等）。</p>
+<p>CIDR的主要优点包括：</p>
+<ol>
+<li>灵活性：CIDR允许将IP地址空间划分为更小的子网，以满足网络需求。可以根据需要分配灵活的子网大小。</li>
+<li>节省IP地址空间：传统的基于类别的地址分配方法会导致IP地址的浪费。CIDR允许更有效地利用可用的IP地址，避免了大量的地址浪费。</li>
+<li>简化路由表：CIDR使用聚合路由的方式，将多个子网聚合成更大的网络块，从而减少了路由表的规模，提高了路由的效率。</li>
+</ol>
+<h5 id="10．ICMP-差错报告报文的种类"><a href="#10．ICMP-差错报告报文的种类" class="headerlink" title="10．ICMP 差错报告报文的种类"></a>10．ICMP 差错报告报文的种类</h5><p>这里也要记ICMP询问报文哦，直接使用思维导图里的：</p>
+<p><img src="/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/ICMP%E7%A7%8D%E7%B1%BB.jpg"></p>
+<h5 id="11．OSPF"><a href="#11．OSPF" class="headerlink" title="11．OSPF"></a>11．OSPF</h5><p>直接使用思维导图里的：</p>
+<p><img src="/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/OSPF.jpg"></p>
+<h5 id="12．IP-多播的概念和多播地址"><a href="#12．IP-多播的概念和多播地址" class="headerlink" title="12．IP 多播的概念和多播地址"></a>12．IP 多播的概念和多播地址</h5><p><strong>IP多播的概念</strong>：多播机制是让源计算机一次发送的单个分组可以抵达用一个组地址标识的若干目标主机，并被它们正确接收</p>
+<p><strong>多播地址：</strong></p>
+<p><img src="/2023/07/29/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C803%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%A7%A3%E6%9E%90/IP%E5%A4%9A%E6%92%AD.jpg"></p>
+<h5 id="13．转交地址的分类"><a href="#13．转交地址的分类" class="headerlink" title="13．转交地址的分类"></a>13．转交地址的分类</h5><p>转交地址（CoA)使是分配给移动设备的临时IP地址。它允许归属地代理向移动设备转发消息。由于与所在网络的不匹配，用于标识主机的设备IP地址在拓扑上是不正确的，所以需要独立的IP地址用于分别标识主机和在全局IP网络内的位置。</p>
+<p>主要分为两种：</p>
+<p>外部代理转交地址FACoA（Foreign AgentCoA)：外部代理使用的相同的CoA，终端负责接收CoA,实现某种类型的网络地址转换（NAT）网络。在外部代理转交地址机制中，移动节点在外部网络中使用相同的CoA，这意味着所有在外部网络中的移动节点都具有相同的CoA。这种机制要求外部代理负责接收来自移动节点的数据包，并将其转发到正确的目标地址。外部代理充当了移动节点和目标地址之间的中间人，实现了地址转发和网络通信。</p>
+<p>同位(Co-located)转交地址： 外部网络中的每个移动结点都有自己的 CoA ，通常由 DHCP 服务器负责分配，这意味着每个移动节点都具有唯一的CoA，并且可以直接与目标地址进行通信，而无需经过外部代理。在这种机制下，移动节点负责接收来自目标地址的数据包，并将其转发到正确的目的地。</p>
+<h5 id="14．路由器的优缺点"><a href="#14．路由器的优缺点" class="headerlink" title="14．路由器的优缺点"></a>14．路由器的优缺点</h5><p><strong>优点：</strong></p>
+<ol>
+<li>网络分割和隔离：路由器可以将网络划分为多个子网，实现网络分割和隔离，这有助于提高网络性能、安全性和管理灵活性。</li>
+<li>路由选择：路由器能够根据路由协议和路由表，选择最佳路径来转发数据包，以实现高效的数据传输和网络通信。</li>
+<li>网络扩展和互联互通：路由器允许不同网络之间的互联互通，使得多个网络可以无缝地通信和共享资源，实现网络的扩展和拓扑连接。</li>
+<li>数据包过滤和安全性：路由器可以根据配置的访问控制列表（ACL）对数据包进行过滤和筛选，实现对网络流量的控制和安全防护。</li>
+<li>带宽管理和负载均衡：路由器可以进行带宽管理和负载均衡，通过合理分配网络资源，提高网络性能和用户体验。</li>
+<li>支持多种连接类型：路由器通常支持多种连接类型，如以太网、无线网络（Wi-Fi）、光纤等，使得不同类型的网络设备可以连接和通信。</li>
+</ol>
+<p><strong>缺点：</strong></p>
+<ol>
+<li><p>成本高：高性能的企业级路由器通常价格昂贵，对于小型组织或个人用户来说，购买和维护成本可能较高。</p>
+</li>
+<li><p>配置复杂性：路由器的配置和管理需要一定的技术知识和经验，对于非专业人士来说，可能较为复杂和困难。</p>
+</li>
+<li><p>单点故障：如果网络中只有一个路由器，当路由器发生故障时，整个网络可能会受到影响，导致网络中断或不可达。</p>
+</li>
+<li><p>性能瓶颈：低性能的路由器可能成为网络的瓶颈，限制了数据传输速度和网络吞吐量。</p>
+</li>
+<li><p>安全漏洞：路由器作为网络的关键设备，如果配置不当或存在安全漏洞，可能成为网络攻击的目标，造成安全威胁和数据泄漏风险。</p>
+<p>———————————————————————————————————休息会儿再更新</p>
+<p>如果上述内容对你有帮助，并且希望能够获得上面提到的全套资料以及思维导图，欢迎前往我的面包多商铺购买<strong>重邮803全套复习资料</strong>，也欢迎大家与我讨论803相关的内容。<br>  <a target="_blank" rel="noopener" href="https://mbd.pub/o/bread/mbd-ZJeckp5q">重邮803全套复习资料链接</a></p>
+</li>
+</ol>
+<h4 id="（五）传输层"><a href="#（五）传输层" class="headerlink" title="（五）传输层"></a>（五）传输层</h4><h5 id="1．传输层寻址与端口"><a href="#1．传输层寻址与端口" class="headerlink" title="1．传输层寻址与端口"></a>1．传输层寻址与端口</h5><h5 id="2．无连接服务与面向连接服务"><a href="#2．无连接服务与面向连接服务" class="headerlink" title="2．无连接服务与面向连接服务"></a>2．无连接服务与面向连接服务</h5><h5 id="3-传输连接的建立与释放"><a href="#3-传输连接的建立与释放" class="headerlink" title="3. 传输连接的建立与释放"></a>3. 传输连接的建立与释放</h5><h5 id="4-UDP-的优点"><a href="#4-UDP-的优点" class="headerlink" title="4. UDP 的优点"></a>4. UDP 的优点</h5><h5 id="5-UDP-和-TCP-报文段报头格式"><a href="#5-UDP-和-TCP-报文段报头格式" class="headerlink" title="5. UDP 和 TCP 报文段报头格式"></a>5. UDP 和 TCP 报文段报头格式</h5><h5 id="6-TCP-的流量控制"><a href="#6-TCP-的流量控制" class="headerlink" title="6. TCP 的流量控制"></a>6. TCP 的流量控制</h5><h5 id="7．TCP-的拥塞控制"><a href="#7．TCP-的拥塞控制" class="headerlink" title="7．TCP 的拥塞控制"></a>7．TCP 的拥塞控制</h5><h5 id="8-TCP-传送连接的管理"><a href="#8-TCP-传送连接的管理" class="headerlink" title="8. TCP 传送连接的管理"></a>8. TCP 传送连接的管理</h5><h4 id="（六）应用层"><a href="#（六）应用层" class="headerlink" title="（六）应用层"></a>（六）应用层</h4><h5 id="1-C-S-结构的优点"><a href="#1-C-S-结构的优点" class="headerlink" title="1. C&#x2F;S 结构的优点"></a>1. C&#x2F;S 结构的优点</h5><h5 id="2．DNS-的层次结构"><a href="#2．DNS-的层次结构" class="headerlink" title="2．DNS 的层次结构"></a>2．DNS 的层次结构</h5><h5 id="3．域名服务器的类型"><a href="#3．域名服务器的类型" class="headerlink" title="3．域名服务器的类型"></a>3．域名服务器的类型</h5><h5 id="4．Internet-的应用协议-FTP，MIME，HTTP"><a href="#4．Internet-的应用协议-FTP，MIME，HTTP" class="headerlink" title="4．Internet 的应用协议:FTP，MIME，HTTP"></a>4．Internet 的应用协议:FTP，MIME，HTTP</h5><h5 id="5．Web-页面文档的分类"><a href="#5．Web-页面文档的分类" class="headerlink" title="5．Web 页面文档的分类"></a>5．Web 页面文档的分类</h5><h5 id="6．生成动态文档的方法"><a href="#6．生成动态文档的方法" class="headerlink" title="6．生成动态文档的方法"></a>6．生成动态文档的方法</h5><h5 id="7．生成活动文档的方法"><a href="#7．生成活动文档的方法" class="headerlink" title="7．生成活动文档的方法"></a>7．生成活动文档的方法</h5><h5 id="8．URL-的格式"><a href="#8．URL-的格式" class="headerlink" title="8．URL 的格式"></a>8．URL 的格式</h5><h5 id="9．网络管理系统逻辑模型"><a href="#9．网络管理系统逻辑模型" class="headerlink" title="9．网络管理系统逻辑模型"></a>9．网络管理系统逻辑模型</h5><h5 id="10．网络管理的主要功能"><a href="#10．网络管理的主要功能" class="headerlink" title="10．网络管理的主要功能"></a>10．网络管理的主要功能</h5><h5 id="11．被管对象的特性"><a href="#11．被管对象的特性" class="headerlink" title="11．被管对象的特性"></a>11．被管对象的特性</h5><h5 id="12．SNMP-的基本元素"><a href="#12．SNMP-的基本元素" class="headerlink" title="12．SNMP 的基本元素"></a>12．SNMP 的基本元素</h5><h5 id="13．SNMPv3-的安全模式"><a href="#13．SNMPv3-的安全模式" class="headerlink" title="13．SNMPv3 的安全模式"></a>13．SNMPv3 的安全模式</h5><h4 id="（七）网络安全"><a href="#（七）网络安全" class="headerlink" title="（七）网络安全"></a>（七）网络安全</h4><h5 id="1．网络面临的-4-种威胁-截获、中断、篡改、伪造"><a href="#1．网络面临的-4-种威胁-截获、中断、篡改、伪造" class="headerlink" title="1．网络面临的 4 种威胁:截获、中断、篡改、伪造"></a>1．网络面临的 4 种威胁:截获、中断、篡改、伪造</h5><h5 id="2．替代加密和置换加密"><a href="#2．替代加密和置换加密" class="headerlink" title="2．替代加密和置换加密"></a>2．替代加密和置换加密</h5><h5 id="3．秘密密钥加密算法：DES（明文位数，密钥位数，分组密码）"><a href="#3．秘密密钥加密算法：DES（明文位数，密钥位数，分组密码）" class="headerlink" title="3．秘密密钥加密算法：DES（明文位数，密钥位数，分组密码）"></a>3．秘密密钥加密算法：DES（明文位数，密钥位数，分组密码）</h5><h5 id="4．公开密钥算法的特点"><a href="#4．公开密钥算法的特点" class="headerlink" title="4．公开密钥算法的特点"></a>4．公开密钥算法的特点</h5><h5 id="5．公开密钥加密算法：RSA"><a href="#5．公开密钥加密算法：RSA" class="headerlink" title="5．公开密钥加密算法：RSA"></a>5．公开密钥加密算法：RSA</h5><h5 id="6．数字签名"><a href="#6．数字签名" class="headerlink" title="6．数字签名"></a>6．数字签名</h5><h4 id="（八）视频、音频与无线网络"><a href="#（八）视频、音频与无线网络" class="headerlink" title="（八）视频、音频与无线网络"></a>（八）视频、音频与无线网络</h4><h5 id="1．RTP、RTCP、QoS-等的概念"><a href="#1．RTP、RTCP、QoS-等的概念" class="headerlink" title="1．RTP、RTCP、QoS 等的概念"></a>1．RTP、RTCP、QoS 等的概念</h5><h5 id="2、时延、时延抖动等的处理"><a href="#2、时延、时延抖动等的处理" class="headerlink" title="2、时延、时延抖动等的处理"></a>2、时延、时延抖动等的处理</h5><h5 id="3、WLan、WPan、WMan、WLL-的概念"><a href="#3、WLan、WPan、WMan、WLL-的概念" class="headerlink" title="3、WLan、WPan、WMan、WLL 的概念"></a>3、WLan、WPan、WMan、WLL 的概念</h5><h5 id="4、无线局域网的-DCF-和-PCF"><a href="#4、无线局域网的-DCF-和-PCF" class="headerlink" title="4、无线局域网的 DCF 和 PCF"></a>4、无线局域网的 DCF 和 PCF</h5><h5 id="5、CSMA-CA-协议的原理"><a href="#5、CSMA-CA-协议的原理" class="headerlink" title="5、CSMA&#x2F;CA 协议的原理"></a>5、CSMA&#x2F;CA 协议的原理</h5><h4 id="（九）下一代因特网"><a href="#（九）下一代因特网" class="headerlink" title="（九）下一代因特网"></a>（九）下一代因特网</h4><h5 id="1．IPv6-的特点"><a href="#1．IPv6-的特点" class="headerlink" title="1．IPv6 的特点"></a>1．IPv6 的特点</h5><h5 id="2．P2P-技术的特点"><a href="#2．P2P-技术的特点" class="headerlink" title="2．P2P 技术的特点"></a>2．P2P 技术的特点</h5><h5 id="3．标记交换原理"><a href="#3．标记交换原理" class="headerlink" title="3．标记交换原理"></a>3．标记交换原理</h5><h5 id="4．MPLS-的封装"><a href="#4．MPLS-的封装" class="headerlink" title="4．MPLS 的封装"></a>4．MPLS 的封装</h5><h5 id="5．标记分配的方式"><a href="#5．标记分配的方式" class="headerlink" title="5．标记分配的方式"></a>5．标记分配的方式</h5><h5 id="6．与以路由器作为核心网络平台的技术相比，MPLS-的主要优点"><a href="#6．与以路由器作为核心网络平台的技术相比，MPLS-的主要优点" class="headerlink" title="6．与以路由器作为核心网络平台的技术相比，MPLS 的主要优点"></a>6．与以路由器作为核心网络平台的技术相比，MPLS 的主要优点</h5><h5 id="7．Intserv-的局限性"><a href="#7．Intserv-的局限性" class="headerlink" title="7．Intserv 的局限性"></a>7．Intserv 的局限性</h5><h5 id="8．DiffServ-的体系结构"><a href="#8．DiffServ-的体系结构" class="headerlink" title="8．DiffServ 的体系结构"></a>8．DiffServ 的体系结构</h5><h5 id="9．DiffServ-的技术特点"><a href="#9．DiffServ-的技术特点" class="headerlink" title="9．DiffServ 的技术特点"></a>9．DiffServ 的技术特点</h5><h5 id="10-SDN-网络"><a href="#10-SDN-网络" class="headerlink" title="10. SDN 网络"></a>10. SDN 网络</h5><p>详细内容请访问：cquptky803.cn</p>
 <p>如果上述内容对你有帮助，并且希望能够获得上面提到的全套资料以及思维导图，欢迎前往我的面包多商铺购买<strong>重邮803全套复习资料</strong>，也欢迎大家与我讨论803相关的内容。<br>  <a target="_blank" rel="noopener" href="https://mbd.pub/o/bread/mbd-ZJeckp5q">重邮803全套复习资料链接</a></p>
 
     </div>
@@ -432,6 +703,26 @@
   </div>
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 
