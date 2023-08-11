@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"cquptky803.cn","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="2023年重邮《计算机网络(803)》答案解析从全套答案解析中选取出来，可以帮助大家理清楚重邮复习的方向，答案解析中的【追根溯源】给出了该题答案在第八版课本的位置，【复习建议】给出了针对这一知识点的要求，【模拟题库】给出了该计算题曾在模拟题库出现或者在模拟题库中类似的题目。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="重邮计算机网络(803)2023年答案解析">
+<meta property="og:url" content="https://cquptky803.cn/2023/08/12/%E9%87%8D%E9%82%AE%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-803-2023%E5%B9%B4%E7%AD%94%E6%A1%88%E8%A7%A3%E6%9E%90/index.html">
+<meta property="og:site_name" content="重庆邮电大学计算机网络803学习分享">
+<meta property="og:description" content="2023年重邮《计算机网络(803)》答案解析从全套答案解析中选取出来，可以帮助大家理清楚重邮复习的方向，答案解析中的【追根溯源】给出了该题答案在第八版课本的位置，【复习建议】给出了针对这一知识点的要求，【模拟题库】给出了该计算题曾在模拟题库出现或者在模拟题库中类似的题目。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cquptky803.cn/2023/08/12/%E9%87%8D%E9%82%AE%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-803-2023%E5%B9%B4%E7%AD%94%E6%A1%88%E8%A7%A3%E6%9E%90/%E9%A6%99%E5%86%9C%E5%85%AC%E5%BC%8F.png">
+<meta property="article:published_time" content="2023-08-11T16:29:36.000Z">
+<meta property="article:modified_time" content="2023-08-11T16:57:42.032Z">
+<meta property="article:author" content="意中人">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cquptky803.cn/2023/08/12/%E9%87%8D%E9%82%AE%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-803-2023%E5%B9%B4%E7%AD%94%E6%A1%88%E8%A7%A3%E6%9E%90/%E9%A6%99%E5%86%9C%E5%85%AC%E5%BC%8F.png">
+
+<link rel="canonical" href="https://cquptky803.cn/2023/08/12/%E9%87%8D%E9%82%AE%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-803-2023%E5%B9%B4%E7%AD%94%E6%A1%88%E8%A7%A3%E6%9E%90/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>重邮计算机网络(803)2023年答案解析 | 重庆邮电大学计算机网络803学习分享</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">重庆邮电大学计算机网络803学习分享</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://cquptky803.cn/2023/08/12/%E9%87%8D%E9%82%AE%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-803-2023%E5%B9%B4%E7%AD%94%E6%A1%88%E8%A7%A3%E6%9E%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="意中人">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="重庆邮电大学计算机网络803学习分享">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          重邮计算机网络(803)2023年答案解析
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-08-12 00:29:36 / 修改时间：00:57:42" itemprop="dateCreated datePublished" datetime="2023-08-12T00:29:36+08:00">2023-08-12</time>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>2023年重邮《计算机网络(803)》答案解析从全套答案解析中选取出来，可以帮助大家理清楚重邮复习的方向，答案解析中的【追根溯源】给出了该题答案在第八版课本的位置，【复习建议】给出了针对这一知识点的要求，【模拟题库】给出了该计算题曾在模拟题库出现或者在模拟题库中类似的题目。</p>
+<span id="more"></span>
+
+<h2 id="2023年重邮《计算机网络-803-》答案解析"><a href="#2023年重邮《计算机网络-803-》答案解析" class="headerlink" title="2023年重邮《计算机网络(803)》答案解析"></a>2023年重邮《计算机网络(803)》答案解析</h2><h2 id="一、名词解释题"><a href="#一、名词解释题" class="headerlink" title="一、名词解释题"></a>一、名词解释题</h2><ol>
+<li></li>
+</ol>
+<p>协议是控制两个对等实体（或多个实体）进行通信的规则的集合。在协议的控制下，两个对等实体间的通信使得本层能够向上一层提供服务。要实现本层协议，还需要使用下面一层所提供的服务。</p>
+<p>【追根溯源】课本P34</p>
+<p>【复习建议】此处不仅要记住协议的概念，还要记住服务的概念，以及两者之间的联系与区别。有关协议与服务的题已经在真题里出现多次，务必熟记。</p>
+<ol start="2">
+<li></li>
+</ol>
+<p>香农定理指出：信道的极限信息传输速率C是 <img src="/2023/08/12/%E9%87%8D%E9%82%AE%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-803-2023%E5%B9%B4%E7%AD%94%E6%A1%88%E8%A7%A3%E6%9E%90/%E9%A6%99%E5%86%9C%E5%85%AC%E5%BC%8F.png"></p>
+<p>式中，W为信道的带宽（以Hz为单位)，S为信道内所传信号的平均功率，N为信道内部的高斯噪声功率。香农定理表明，信道的带宽或信道中的信噪比越大，信息的极限传输速率就越高。香农公式指出了信息传输速率的上限。香农公式的意义在于:只要信息传输速率低于信道的极限信息传输速率，就一定存在某种办法来实现无差错的传输。</p>
+<p>【追根溯源】课本P47</p>
+<p>【复习建议】香农公式与奈氏准则一直是每年考试的热点，对应的计算题可以在计算题模拟题里面找到。</p>
+<ol start="3">
+<li></li>
+</ol>
+<p>隧道技术(tunneling)是一种IPv4向IPv6过渡的一种方法。这种方法的要点就是在IPv6数据报要进入IPv4网络时，把IPv6数据报封装成为IPv4数据报，整个的IPv6数据报变成了IPv4 数据报的数据部分。这样的IPv4 数据报在两个路由器之间传送时，原来的IPv6数据报就好像在IPv4网络的隧道中传输，什么都没有变化。当IPv4 数据报离开IPv4网络中的隧道时，再把数据部分(即原来的IPv6数据报）交给主机的IPv6协议栈。隧道技术也应用在多播路由选择协议转发多播数据报的过程中。</p>
+<p>【追根溯源】课本P155，2010年多选题第8题改编</p>
+<p>【复习建议】隧道技术也是早就出现在历年真题之中，要注意的是我们在转发多播数据报的一种方法中也有隧道技术，有关详细内容在课本的183页，这里转发多播数据报的三种方法均需要掌握。</p>
+<ol start="4">
+<li></li>
+</ol>
+<p>在CIDR中，超网是指将多个相邻的子网合并成一个更大的网络，以减少路由表的大小和提高路由效率。超网的CIDR表示形式通常是将多个子网的IP地址范围的前缀部分合并成一个更大的前缀。</p>
+<p>【追根溯源】课本P128</p>
+<h2 id="二、简答题"><a href="#二、简答题" class="headerlink" title="二、简答题"></a>二、简答题</h2><ol start="5">
+<li></li>
+</ol>
+<p>   略，详细内容请查看全套真题解析中的内容。</p>
+<ol start="6">
+<li></li>
+</ol>
+<p>ICMP（Internet Control Message Protocol）是一个网络控制协议，它是IP层的协议，位于网络层（第3层）。</p>
+<p>为了更有效地转发IP数据报和提高交付成功的机会，在网际层使用了网际控制报文协义ICMP。ICMP 允许主机或路由器报告差错情况和提供有关异常情况的报告，因此主机和路由器都能通过该协议进行网络诊断。使用到ICMP的网络命令有PING和traceroute。</p>
+<p>【追根溯源】课本P146</p>
+<p>【复习建议】21、22、23年已经连续三年考察有关于ICMP协议的内容了，可见ICMP协议之重。备考仍需掌握有关ICMP的整个内容以及它的应用，具体要背诵的内容按照思维导图中给出的重点即可。</p>
+<ol start="7">
+<li></li>
+</ol>
+<p>密码体制按照密钥的使用方式可以分为两类：对称密钥体制和非对称密钥体制。</p>
+<p>RSA是一种非对称密钥体制，属于公钥密码体制。RSA的工作原理是基于大数分解的难题，利用两个大质数的乘积作为公钥，而私钥是两个大质数的积数论函数。RSA加密时，将明文转换成整数后，使用公钥进行加密；解密时，使用私钥进行解密，将密文还原成明文。</p>
+<p>如果仅使用密钥k对数据进行加密和解密是不可行的。因为密钥k只有一个，如果将其直接用于加密和解密，不能保证密文的安全性，也不能保证密钥的安全性。在实际应用中，通常使用对称密钥体制和非对称密钥体制相结合的方式，即使用非对称密钥体制对对称密钥进行加密传输，确保密钥的安全性，然后使用对称密钥体制对数据进行加密和解密，保证加密数据的安全性。</p>
+<p>【复习建议】第7章的内容在每年试题中都会出现一个简答题左右的题量，但来来回回也只是那几个，按照思维导图中给出的准备好即可。</p>
+<p>注：对称密钥体制使用同一把密钥进行加密和解密，包括常见的DES、AES等算法。由于密钥只有一把，因此对称密钥体制需要确保密钥的安全性，一旦密钥泄露，加密数据的安全性将无法保障。</p>
+<p>非对称密钥体制使用一对密钥进行加密和解密，包括常见的RSA、DSA等算法。其中，公钥可以公开，用于加密数据，而私钥需要保密，用于解密数据。非对称密钥体制可以提高密钥的安全性，但由于加密和解密需要使用不同的密钥，会导致加密和解密的效率较低。</p>
+<ol start="8">
+<li></li>
+</ol>
+<p>(1)准备发送:适配器从网络层获得一个分组，加上以太网的首部和尾部，组成以太网帧，放入适配器的缓存中。但在发送之前，必须先检测信道。</p>
+<p>(2)检测信道:若检测到信道忙，则继续不停地检测，一直等待信道转为空闲。此时若在96比特时间内信道保持空闲（保证了帧间最小间隔)，就发送这个帧。</p>
+<p>(3)在发送过程中仍不停地检测信道，即网络适配器要边发送边监听。这里只有两种可能性:</p>
+<p>①发送成功:如果在争用期内一直未检测到碰撞，就认为发送成功（如果接收方收到了有差错的帧，就丢弃它，后续的工作由高层来处理)。发送完毕后，其他什么也不做。然后回到(1)。</p>
+<p>②发送失败:在争用期内检测到碰撞。这时立即停止发送数据，并按规定发送人为干扰信号。适配器接着就执行指数退避算法，等待r倍512比特时间后，返回到步骤(2)，继续检测信道。但若重传达16次仍不能成功，则停止重传而向上报错。</p>
+<p>以太网使用截断二进制指数退避(truncated binary exponential backoff)算法来确定碰撞后重传的时机。这种算法让发生碰撞的站在停止发送数据后，不是等待信道变为空闲后就立即再发送数据，而是退避一个随机的时间。</p>
+<p>【追根溯源】课本P90，P92，2013简答题第3题改编。</p>
+<p>【复习建议】有关协议要点的内容一直都是必背的内容，注意的是这里不要简记，否则很容易会被扣分。</p>
+<h2 id="三、分析题"><a href="#三、分析题" class="headerlink" title="三、分析题"></a>三、分析题</h2><ol start="9">
+<li></li>
+</ol>
+<p>   略，详细内容请查看全套真题解析中的内容。</p>
+<ol start="10">
+<li></li>
+</ol>
+<p>​     略，详细内容请查看全套真题解析中的内容。</p>
+<ol start="11">
+<li></li>
+</ol>
+<p>​    不能使用MAC地址代替IP地址，就算是每个设备都有一个唯一的MAC地址也不可以。首先，MAC地址是数据链路层的地址，用于在局域网内标识设备，而IP地址是网络层的地址，用于在整个互联网上标识设备。MAC地址只能在一个局域网内唯一标识设备，而IP地址可以在整个互联网上唯一标识设备。其次，由于全世界存在着各式各样的网络，它们使用不同的 MAC地址。要使这些异构网络能够互相通信就必须进行非常复杂的MAC地址转换工作，因此由用户或用户主机来完成这项工作几乎是不可能的事。即使是对分布在全世界的以太网 MAC 地址进行寻址，也是极其困难的。然而IP编址把这个复杂问题解决了。连接到互联网的主机只需各自拥有一个IP地址，它们之间的通信就像连接在同一个网络上那样简单方便，即使必须多次调用ARP来找到MAC地址，但这个过程都是由计算机软件自动进行的，对用户来说是看不见的。</p>
+<p>【追根溯源】课本P135原题</p>
+<p>【复习建议】课本中出现有含“？”的问题一定要注意，因为真题往往会直接将这类题目直接照搬作为考试题目，例如课本P98，MAC首部中没有一个帧长度字段，那么MAC子层怎么样知道从接收到的以太网帧中提取处多少字节的书籍交付给上一层协议呢？课本中类似于这种问题有很多，希望能引起同学们注意。</p>
+<p>【模拟题库】在简单题模拟题库中有很多类似这类题目，将课本的问题加深或变形之后来作为考题，803考题也同样如此，在考试前最好能将模拟题库中的习题练懂、背熟。 </p>
+<ol start="12">
+<li></li>
+</ol>
+<p>   略，详细内容请查看全套真题解析中的内容。</p>
+<ol start="13">
+<li></li>
+</ol>
+<p>略，详细内容请查看全套真题解析中的内容。</p>
+<ol start="14">
+<li></li>
+</ol>
+<p>略，详细内容请查看全套真题解析中的内容。</p>
+<p>【模拟题库】计算题模拟题中有很多关于IP数据报分片的计算题，这是重点内容，务必掌握。</p>
+<h2 id="四、综合题"><a href="#四、综合题" class="headerlink" title="四、综合题"></a>四、综合题</h2><p>略，详细内容请查看全套真题解析中的内容。</p>
+<p>编写维护不易，如果上述内容对你有帮助，并且希望能够获得复习803的全套资料以及全套803详细的历年真题解析，欢迎前往我的面包多商铺<a target="_blank" rel="noopener" href="https://mbd.pub/o/bread/mbd-ZJeckp5q"><strong>购买重邮803全套复习资料</strong></a>，也欢迎大家与我讨论803相关的内容。<br>  <a target="_blank" rel="noopener" href="https://mbd.pub/o/bread/mbd-ZJeckp5q">重邮803全套复习资料链接</a></p>
+<p>​		<a target="_blank" rel="noopener" href="https://mbd.pub/o/bread/ZJyam5lv">重邮803-2023年答案解析</a></p>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>意中人
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://cquptky803.cn/2023/08/12/%E9%87%8D%E9%82%AE%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-803-2023%E5%B9%B4%E7%AD%94%E6%A1%88%E8%A7%A3%E6%9E%90/" title="重邮计算机网络(803)2023年答案解析">https://cquptky803.cn/2023/08/12/重邮计算机网络-803-2023年答案解析/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/08/11/%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E5%8E%86%E5%B9%B4%E7%9C%9F%E9%A2%98%E8%A7%A3%E6%9E%90%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB/" rel="prev" title="重庆邮电大学历年真题解析免费分享">
+      <i class="fa fa-chevron-left"></i> 重庆邮电大学历年真题解析免费分享
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#2023%E5%B9%B4%E9%87%8D%E9%82%AE%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-803-%E3%80%8B%E7%AD%94%E6%A1%88%E8%A7%A3%E6%9E%90"><span class="nav-text">2023年重邮《计算机网络(803)》答案解析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A%E9%A2%98"><span class="nav-text">一、名词解释题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E7%AE%80%E7%AD%94%E9%A2%98"><span class="nav-text">二、简答题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%88%86%E6%9E%90%E9%A2%98"><span class="nav-text">三、分析题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E7%BB%BC%E5%90%88%E9%A2%98"><span class="nav-text">四、综合题</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">意中人</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">意中人</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
