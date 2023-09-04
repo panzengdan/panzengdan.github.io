@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"cquptky803.cn","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="有不少同学向我反馈，适用于803的习题太少了，已经进入了“题荒”，问我可不可以更新整理几套重邮的习题，这份资料就在同学们的催促下出现了，如需检验自己的复习成果的同学可以试试这份模拟习题自己能拿下多少分。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="重邮803模拟训练题">
+<meta property="og:url" content="https://cquptky803.cn/2023/09/04/%E9%87%8D%E9%82%AE803%E6%A8%A1%E6%8B%9F%E8%AE%AD%E7%BB%83%E9%A2%98/index.html">
+<meta property="og:site_name" content="重庆邮电大学计算机网络803学习分享">
+<meta property="og:description" content="有不少同学向我反馈，适用于803的习题太少了，已经进入了“题荒”，问我可不可以更新整理几套重邮的习题，这份资料就在同学们的催促下出现了，如需检验自己的复习成果的同学可以试试这份模拟习题自己能拿下多少分。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cquptky803.cn/2023/09/04/%E9%87%8D%E9%82%AE803%E6%A8%A1%E6%8B%9F%E8%AE%AD%E7%BB%83%E9%A2%98/1%E5%A5%97%E5%9B%BE1.png">
+<meta property="og:image" content="https://cquptky803.cn/2023/09/04/%E9%87%8D%E9%82%AE803%E6%A8%A1%E6%8B%9F%E8%AE%AD%E7%BB%83%E9%A2%98/1%E5%A5%97%E5%9B%BE2.png">
+<meta property="og:image" content="https://cquptky803.cn/2023/09/04/%E9%87%8D%E9%82%AE803%E6%A8%A1%E6%8B%9F%E8%AE%AD%E7%BB%83%E9%A2%98/2%E5%A5%97%E5%9B%BE1.png">
+<meta property="og:image" content="https://cquptky803.cn/2023/09/04/%E9%87%8D%E9%82%AE803%E6%A8%A1%E6%8B%9F%E8%AE%AD%E7%BB%83%E9%A2%98/2%E5%A5%97%E5%9B%BE2.png">
+<meta property="og:image" content="https://cquptky803.cn/2023/09/04/%E9%87%8D%E9%82%AE803%E6%A8%A1%E6%8B%9F%E8%AE%AD%E7%BB%83%E9%A2%98/2%E5%A5%97%E5%9B%BE3.png">
+<meta property="og:image" content="https://cquptky803.cn/2023/09/04/%E9%87%8D%E9%82%AE803%E6%A8%A1%E6%8B%9F%E8%AE%AD%E7%BB%83%E9%A2%98/%E4%B9%A0%E9%A2%981.png">
+<meta property="og:image" content="https://cquptky803.cn/2023/09/04/%E9%87%8D%E9%82%AE803%E6%A8%A1%E6%8B%9F%E8%AE%AD%E7%BB%83%E9%A2%98/%E7%AD%94%E6%A1%881.png">
+<meta property="article:published_time" content="2023-09-04T14:56:44.000Z">
+<meta property="article:modified_time" content="2023-09-04T15:42:18.316Z">
+<meta property="article:author" content="意中人">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cquptky803.cn/2023/09/04/%E9%87%8D%E9%82%AE803%E6%A8%A1%E6%8B%9F%E8%AE%AD%E7%BB%83%E9%A2%98/1%E5%A5%97%E5%9B%BE1.png">
+
+<link rel="canonical" href="https://cquptky803.cn/2023/09/04/%E9%87%8D%E9%82%AE803%E6%A8%A1%E6%8B%9F%E8%AE%AD%E7%BB%83%E9%A2%98/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>重邮803模拟训练题 | 重庆邮电大学计算机网络803学习分享</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">重庆邮电大学计算机网络803学习分享</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://cquptky803.cn/2023/09/04/%E9%87%8D%E9%82%AE803%E6%A8%A1%E6%8B%9F%E8%AE%AD%E7%BB%83%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="意中人">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="重庆邮电大学计算机网络803学习分享">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          重邮803模拟训练题
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-09-04 22:56:44 / 修改时间：23:42:18" itemprop="dateCreated datePublished" datetime="2023-09-04T22:56:44+08:00">2023-09-04</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+            <div class="post-description">有不少同学向我反馈，适用于803的习题太少了，已经进入了“题荒”，问我可不可以更新整理几套重邮的习题，这份资料就在同学们的催促下出现了，如需检验自己的复习成果的同学可以试试这份模拟习题自己能拿下多少分。</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>目前已经进入九月份，很多同学也已经刷完了课本的课后习题，部分同学也开始在做真题。</p>
+<p>有不少同学向我反馈，适用于803的习题太少了，已经进入了“题荒”，问我可不可以更新整理几套重邮的习题，这份资料就在同学们的催促下出现了，但维护勘误不易，答案解析没办法以最快的速度免费更新给大家，想要先获取这份模拟题的答案解析可以在这购买。</p>
+<p><a target="_blank" rel="noopener" href="https://mbd.pub/o/bread/ZJ2blZxv">模拟练习题答案解析</a></p>
+<p>重庆邮电大学</p>
+<h1 id="2024年攻读硕士学位研究生模拟练习题1"><a href="#2024年攻读硕士学位研究生模拟练习题1" class="headerlink" title="2024年攻读硕士学位研究生模拟练习题1"></a>2024年攻读硕士学位研究生模拟练习题1</h1><p>科目名称：  计算机网络          </p>
+<p>科目代码：  803</p>
+<p>考生注意事项</p>
+<p>1、 答题前，考生必须在答题纸指定位置上填写考生姓名、报考单位和考生编号。</p>
+<p>2、 所有答案必须写在答题纸上，写在其他地方无效。</p>
+<p>3、 填（书）写必须使用0.5mm黑色签字笔。</p>
+<p>4、 考试结束，将答题纸和试题一并装入试卷袋中交回。</p>
+<p>5、 本试题满分150分，考试时间3小时。</p>
+<p>注：所有答案必须写在答题纸上，试卷上作答无效! </p>
+<h4 id="一、名词解释题（本大题共4小题，每小题3分，共12分）"><a href="#一、名词解释题（本大题共4小题，每小题3分，共12分）" class="headerlink" title="一、名词解释题（本大题共4小题，每小题3分，共12分）"></a>一、名词解释题（本大题共4小题，每小题3分，共12分）</h4><p>1、生成树协议</p>
+<p>2、服务访问点</p>
+<p>3、热土豆路由选择算法</p>
+<p>4、主动队列管理</p>
+<h4 id="二、简答题（本大题共4小题，每小题6分，共24分）"><a href="#二、简答题（本大题共4小题，每小题6分，共24分）" class="headerlink" title="二、简答题（本大题共4小题，每小题6分，共24分）"></a>二、简答题（本大题共4小题，每小题6分，共24分）</h4><p>5、路由信息协议RIP的特点是什么？最短路径优先算法OSPF的特点与RIP相比是什么？为什么说RIP适用于小型网络而OSPF适用于大型网络？</p>
+<p>6、什么是 NAT？NAPT 有哪些特点？NAT 的优点和缺点有哪些？</p>
+<p>7、HTTP&#x2F;2.0相比于HTTP&#x2F;1.1新增了哪些特点？HTTP1.1中什么是流水线方式？什么是非流水线方式？</p>
+<p>8、报文机密性和报文完整性之间的区别是什么？能具有机密性而没有完整性吗？能具有完整性而没有机密性吗？</p>
+<h4 id="三、分析题（本大题共6小题，每小题9分，共54分）"><a href="#三、分析题（本大题共6小题，每小题9分，共54分）" class="headerlink" title="三、分析题（本大题共6小题，每小题9分，共54分）"></a>三、分析题（本大题共6小题，每小题9分，共54分）</h4><p>9、要发送的数据为A&#x3D;11010110，采用CRC的生成多项式是P（x）&#x3D;<strong>X3+X2+1</strong>.试求应添加在数据A后面的余数。若数据A在传输的过程中最后一个0变成了1，接收端能否发现？若数据A在传输的过程中最后两个比特位10变成了01，接收端能否发现？</p>
+<p>10、试将数据 01101001 01101101 01100001 01100111 01100101 进行base64编码，并得出最后传送的ASCII码数据。</p>
+<p>11、若主机C端口80上运行一个 Web服务器，假设这个Web服务器使用持续链接，并且正在接收来自两台不同主机A和B的请求,被发送的所有请求都通过位于主机C的相同套接字吗？如果他们通过不同的套接字传递，这两个套接字都具有端口80吗？</p>
+<p>12、ICMP的作用是什么？什么情况下不需要发送ICMP差错报告报文？PING的原理是什么？</p>
+<p>13、我们常看到路由器由输入端口、输出端口、交换结构和路由选择处理器组成，其中哪些是由硬件组成的，哪些是由软件组成的，为什么？转到网络层的数据平面和控制平面的概念，哪些是用硬件实现的，哪些是用软件实现的，为什么？</p>
+<p>14、为什么HTTP、SMTP、POP3都运行在TCP上，而不是UDP上？ 假定你想尽快地处理从远程客户到服务器的事务，你想用UDP还是TCP？为什么？</p>
+<h4 id="四、综合题（本大题共-5-小题，每小题-12-分，共-60-分）"><a href="#四、综合题（本大题共-5-小题，每小题-12-分，共-60-分）" class="headerlink" title="四、综合题（本大题共 5 小题，每小题 12 分，共 60 分）"></a>四、综合题（本大题共 5 小题，每小题 12 分，共 60 分）</h4><p>15.下图1是三个计算机局域网A、B和C，分别包含10台、8台和5台计算机，通过路由器互联，并通过该路由器的接口d联入因特网。路由器各端口名分别为a、b、c和d(假设端口d接入P地址为61.60.21.80的互联网地址)。局域网A和局域网B共用一个C类网络IP地址202.38.60.0，并将此P地址中主机地址的高两位作为子网编号。局域网A的子网编号为01，局域网B的子网编号为10。P地址的低六位作为子网中的主机编号。局域网C的网络号是202.38.61.0。请回答下列问题:</p>
+<p><img src="/2023/09/04/%E9%87%8D%E9%82%AE803%E6%A8%A1%E6%8B%9F%E8%AE%AD%E7%BB%83%E9%A2%98/1%E5%A5%97%E5%9B%BE1.png"></p>
+<p>图1</p>
+<p>1）为每个网络的计算机和路由器的端口分配IP地址。</p>
+<p>2）列出路由器的路由表。</p>
+<p>3）若局域网B中的一主机要向局域网B广播一个分组，则写出该分组的目的IP地址。</p>
+<p>4）若局域网B中的一主机要向局域网C广播一个分组，则写出该分组的目的IP地址。</p>
+<p>16、假设某个家庭网络通过某个ISP接入到因特网，该家庭的多个成员使用不同上网设备（例如笔记本电脑、智能手机、台式机）以无线或有线方式连接家庭网关，进而可以通过家庭网关同时访问因特网中的各种资源。ISP给用户的家庭网关仅分配了一个全球唯一的IPv4地址，而该家庭各成员的上网设备使用由家庭网关动态分配的私有IPv4地址（即内部专用地址）。请回答以下问题。</p>
+<ol>
+<li><p>为了让使用私有IPv4地址的上网设备能够与因特网上的Web服务器正常通信，需要在家庭网关上开启什么功能？请简单描述实现该功能的基本原理。</p>
+</li>
+<li><p>假设某个家庭成员通过家庭网关浏览因特网中某个网站的网页内容，则可能涉及到TCP&#x2F;IP协议簇中的哪些协议？这些协议的作用是什么？</p>
+</li>
+<li><p>第2）问中，除TCP&#x2F;IP协议簇中的协议外，还可能涉及数据链路层的哪些协议？</p>
+</li>
+</ol>
+<p>17、TCP的拥塞窗口 cwnd大小与传输轮次n的关系如下所示:</p>
+<table>
+<thead>
+<tr>
+<th>cwnd</th>
+<th>1</th>
+<th>2</th>
+<th>4</th>
+<th>8</th>
+<th>16</th>
+<th>32</th>
+<th>33</th>
+<th>34</th>
+<th>35</th>
+<th>36</th>
+<th>37</th>
+<th>38</th>
+<th>39</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>n</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+</tr>
+<tr>
+<td>cwnd</td>
+<td>40</td>
+<td>41</td>
+<td>42</td>
+<td>21</td>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>8</td>
+</tr>
+<tr>
+<td>n</td>
+<td>14</td>
+<td>15</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+<td>21</td>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+</tr>
+</tbody></table>
+<p>1）画出 TCP的拥塞窗口与传输轮次的关系曲线。</p>
+<p>2）分别指明TCP工作在慢开始阶段和拥塞避免阶段的时间间隔。</p>
+<p>3)在第16轮次和第22轮次之后发送方是通过收到三个重复的确认还是通过超时检测到丢失了报文段？</p>
+<p>4）在第1轮次、第18轮次和第24轮次发送时，门限ssthresh分别被设置为多大？5）在第几轮次发送出第70个报文段？</p>
+<p>6）假定在第26轮次之后收到了三个重复的确认，因而检测出了报文段的丢失，那么拥塞窗cwnd和门限ssthresh应设置为多大？</p>
+<p>18、P26.考虑从主机A向主机B传输L字节的大文件，假设 MSS为536字节。</p>
+<p>（1）为了使得TCP序号不重复使用的情况下,L的最大值是多少？</p>
+<p>（2）求出传输此文件需要的时间。假定运输层、网络层和数据链路层首部共66字节，并加在每个报文段上，经过155Mbps链路发送得到的分组。忽略流量控制和拥塞控制，主机A能够一个接一个并连续不断地发送报文。</p>
+<p>19、如下图所示，一台路由器连接3个以太网。请根据图中给出的参数回答如下问题:</p>
+<p>1)该TCP&#x2F;IP网络使用的是哪一类IP地址？</p>
+<p>2)写出该网络划分子网后所采用的子网掩码。</p>
+<p>3）系统管理员将计算机D和E按照图中所示结构连入网络，并使用所分配的地址对TCP&#x2F;IP软件进行常规配置后，这两台机器上的网络应用程序能不能够正常通信？为什么？</p>
+<p>4）如果你在主机C上要发送一个P分组，使得主机D和主机E都会接收它，而子网3和子网4上的主机都不会接收它，那么该IP分组应该填写什么样的目标P地址？</p>
+<p><img src="/2023/09/04/%E9%87%8D%E9%82%AE803%E6%A8%A1%E6%8B%9F%E8%AE%AD%E7%BB%83%E9%A2%98/1%E5%A5%97%E5%9B%BE2.png"></p>
+<p>图2</p>
+<p>重庆邮电大学</p>
+<h1 id="2024年攻读硕士学位研究生模拟练习题2"><a href="#2024年攻读硕士学位研究生模拟练习题2" class="headerlink" title="2024年攻读硕士学位研究生模拟练习题2"></a>2024年攻读硕士学位研究生模拟练习题2</h1><p>科目名称：  计算机网络          </p>
+<p>科目代码：  803</p>
+<p>考生注意事项</p>
+<p>1、 答题前，考生必须在答题纸指定位置上填写考生姓名、报考单位和考生编号。</p>
+<p>2、 所有答案必须写在答题纸上，写在其他地方无效。</p>
+<p>3、 填（书）写必须使用0.5mm黑色签字笔。</p>
+<p>4、 考试结束，将答题纸和试题一并装入试卷袋中交回。</p>
+<p>5、 本试题满分150分，考试时间3小时。</p>
+<p>注：所有答案必须写在答题纸上，试卷上作答无效! </p>
+<h4 id="一、名词解释题（本大题共4小题，每小题3分，共12分）-1"><a href="#一、名词解释题（本大题共4小题，每小题3分，共12分）-1" class="headerlink" title="一、名词解释题（本大题共4小题，每小题3分，共12分）"></a>一、名词解释题（本大题共4小题，每小题3分，共12分）</h4><p>1、封装成帧</p>
+<p>2、反向路径广播</p>
+<p>3、拥塞避免</p>
+<p>4、通用网关接口</p>
+<h4 id="二、简答题（本大题共4小题，每小题6分，共24分）-1"><a href="#二、简答题（本大题共4小题，每小题6分，共24分）-1" class="headerlink" title="二、简答题（本大题共4小题，每小题6分，共24分）"></a>二、简答题（本大题共4小题，每小题6分，共24分）</h4><p>5、域名系统的功能是什么？试给出域名解析的过程。</p>
+<p>6、试述邮局协议POP的工作过程。在电子邮件中，为什么需要使用POP和 SMTP这两个协议?IMAP与POP有何区别?</p>
+<p>7、什么是管理信息结构SMI?它的作用是什么?</p>
+<p>8、拒绝服务DoS和分布式拒绝服务DDoS这两种攻击是怎么产生的？</p>
+<h4 id="三、分析题（本大题共6小题，每小题9分，共54分）-1"><a href="#三、分析题（本大题共6小题，每小题9分，共54分）-1" class="headerlink" title="三、分析题（本大题共6小题，每小题9分，共54分）"></a>三、分析题（本大题共6小题，每小题9分，共54分）</h4><p>9、在以太网V2的 MAC 帧格式中，其首部并没有一个帧长度（或数据长度）字段。那么，MAC子层又怎样知道从接收到的以太网帧中取出多少字节的数据交付上一层协议呢?</p>
+<p>10、29.有4个站进行CDMA（码分多址）通信，4个站的码片序列为:a : (-1-1 -1 +l +1 -1 +1 +1)</p>
+<p>b: ( -1-1 +1 -l +1 +l +1 -1)</p>
+<p>c : (-l +1 -l +1 +1 +1 -1 -1)</p>
+<p>d: (-1 +1 -1 -1 -1 -1 +1- 1)</p>
+<p>现收到这样的码片序列:(-1 +1 -3 +1 -1 -3 +l +1)，哪个站点发送了数据1？哪个站点发送了数据0？</p>
+<p>11、在某个卫星信道上，发送端从一个方向发送长度为512B的帧，且发送端的数据发送速率为64kb&#x2F;s，接收端在另一端返回一个很短的确认帧。设卫星信道端到端的单向传播延时为270ms，对于发送窗口尺寸分别为1、7、17和117的情况，信道的吞吐率分别为多少?</p>
+<p>12、UDP全称是用户数据报协议(User Datagram Protocol)，在网络中它与TCP一样用于传输应用层数据，是一种面向报文的协议。使用UDP很容易导致IP数据报的分片。请回答以下问题:</p>
+<p>( 1) UDP的不可靠性是指什么?</p>
+<p>(2）伪首部并非UDP数据报中实际的有效成分，它的作用是什么?它与UDP首部重合的部分是什么?</p>
+<p>(3）什么情况下IP数据报会进行分片?分片以后是否能在中间路由器上进行重组?</p>
+<p>(4）假设现在有一个4096B的应用层数据通过UDP传输，链路层使用以太网(MTU&#x3D; 1 500）没有二次分片，请写出第2个分片的IP首部的以下信息:“不分片”位（DF)、“更多的片”位（MF）和分片偏移量的值。</p>
+<p>13、考虑一个GBN协议，发送窗口为4，序号范围是1024。假设在t时刻接收方期待的下一个有序分组的序号是k。媒体不会对报文重新排序，回答以下问题并解释为什么:</p>
+<p>（1）在t时刻，发送方窗口内的报文序号可能是多少?</p>
+<p>（2）在t时刻，当前传播给发送方的所有可能报文中，ACK字段的所有可能值是多少? </p>
+<p>14、判断该说法是否正确:当一台OSPF 路由器发送它的链路状态信息时，它仅向那些直接相邻的节点发送。并解释理由。</p>
+<h4 id="四、综合题（本大题共-5-小题，每小题-12-分，共-60-分）-1"><a href="#四、综合题（本大题共-5-小题，每小题-12-分，共-60-分）-1" class="headerlink" title="四、综合题（本大题共 5 小题，每小题 12 分，共 60 分）"></a>四、综合题（本大题共 5 小题，每小题 12 分，共 60 分）</h4><p>15、有两台主机A和B接在800 m长的电缆线的两端，并在t&#x3D;0时各自向对方发送一个帧，长度为1500 bit(包括首部和前同步码)。假定在A和B之间有4个转发器，在转发帧时会产生20比特的时延。设传输速率为100 Mbit&#x2F;s，而CSMA&#x2F;CD的退避时间是随机数r倍的争用期，争用期为512 bit，在发生第一次碰撞后，在退避时A选择r&#x3D;0而B选择r &#x3D;1。忽略发生碰撞后的人为干扰信号和帧间最小间隔。</p>
+<p>(1)设信号的传播速率是2×108m&#x2F;s。试计算从A到B(包括4个转发器）的传播时延。</p>
+<p>(2)在什么时间(以秒为单位）B完全收到了A发送的帧?</p>
+<p>(3）现在假定只有A发送帧，帧长仍为1500 bit，但4个转发器都用交换机来代替。交换机在进行存储转发时还要产生额外的20 bit的处理时延。在什么时间(以秒为单位）B完全收到了A发送的帧?</p>
+<p>16、考虑使用32比特主机地址的某数据报网络。假定一台路由器具有4条链路，编号为0~3，分组能被转发到如下的各链路接口:</p>
+<p>​    </p>
+<table>
+<thead>
+<tr>
+<th>目的地址范围</th>
+<th>链路接口</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>11100000 00000000 00000000 00000000  到  11100000 00111111 11111111 11111111</td>
+<td>0</td>
+</tr>
+<tr>
+<td>11100000 01000000 00000000 00000000  到  11100000 01000000 11111111 11111111</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1110000 01000001 00000000 00000000  到  11100001 01111111 11111111 11111111</td>
+<td>2</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>3</td>
+</tr>
+</tbody></table>
+<p>（1）提供一个具有5个表项的转发表，使用最长前缀匹配，转发分组到正确的链路接口。</p>
+<p>（2）描述你的转发表是如何为具有下列目的地址的数据报决定适当的链路接口的。</p>
+<p>a.11001000 10010001 01010001 01010101</p>
+<p>b.11100001 01000000 11000011 00111100</p>
+<p>c.11100001 10000000 00010001 01110111</p>
+<p>17、10.某地区有4个单位各自组建局域网并接入Internet，网络拓扑及各单位IP地址分配情况如图1所示。每个单位有一台路由器，分别用R ~R。表示，除单位1通过路由器R。接入Internet 外，其他单位均通过路由器R,连接到R并接入Internet。R。通过接口D,与对端路由器接口D,相连。</p>
+<p>(1）假设单位⒉局域网中某计算机A分配到的IP地址为100.10.10.5，其子网掩码设置为255.255.248.0，请问该设置将导致该机与哪些单位的网络无法正常通信﹖正确的设置应当是什么?</p>
+<p><img src="/2023/09/04/%E9%87%8D%E9%82%AE803%E6%A8%A1%E6%8B%9F%E8%AE%AD%E7%BB%83%E9%A2%98/2%E5%A5%97%E5%9B%BE1.png"></p>
+<p>图1</p>
+<p>(2）请给出R。的路由表中对应各单位网络和Internet访问的表项，要求尽可能地进行路由聚合以减少表项数量，路由表格式如图2。</p>
+<p><img src="/2023/09/04/%E9%87%8D%E9%82%AE803%E6%A8%A1%E6%8B%9F%E8%AE%AD%E7%BB%83%E9%A2%98/2%E5%A5%97%E5%9B%BE2.png"></p>
+<p>图2</p>
+<p>(3）假设局域网的最大传输单元（(MTU，即每帧搭载的最大数据长度）为1 500 B，路由器R与R.间链路的MTU为620B，其他链路的MTU均为820 B。如果单位4网络中某主机向Internet 发出一个IP分组，分组长度（含头部)为1500 B，请问该分组经由路由器R、R,和R。转发并从路由器的接口D,发出时，被分成了几个IP分组?每个分组中的数据长度分别是多少?假设所有IP分组均为20B的固定头部。</p>
+<p>18、已知路由器R1的路由表如表1所示。试画出各网络和必要的路由器的连接拓扑，标注出必要的IP地址和路由器R1的各接口。对不能确定的情况应当指明。</p>
+<table>
+<thead>
+<tr>
+<th>目的网络地址</th>
+<th>地址掩码</th>
+<th>下一跳地址</th>
+<th>路由器接口</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>140.5.12.64</td>
+<td>&#x2F;26</td>
+<td>180.15.2.5</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>130.5.8.0</td>
+<td>&#x2F;24</td>
+<td>190.16.6.2</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>110.71.0.0</td>
+<td>&#x2F;16</td>
+<td>直连</td>
+<td>M0</td>
+</tr>
+<tr>
+<td>180.15.0.0</td>
+<td>&#x2F;16</td>
+<td>直连</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>190.16.0</td>
+<td>&#x2F;16</td>
+<td>直连</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>默认</td>
+<td>默认</td>
+<td>110.71.4.5</td>
+<td>M0</td>
+</tr>
+</tbody></table>
+<p>19、考虑TCP窗口长度作为时间的函数。经历如图3所示的行为，请回答下列问题。</p>
+<p><img src="/2023/09/04/%E9%87%8D%E9%82%AE803%E6%A8%A1%E6%8B%9F%E8%AE%AD%E7%BB%83%E9%A2%98/2%E5%A5%97%E5%9B%BE3.png"></p>
+<p>图3</p>
+<p>(1)指出运行TCP慢启动时的时间间隔。</p>
+<p>(2)指出运行TCP避免拥塞时的时间间隔。</p>
+<p>(3)在第11个传输周期之后，TCP检测到什么事件?</p>
+<p>(4)在第19个传输周期之后，TCP检测到什么事件?</p>
+<p>(5）在第1个传输周期里，threshold 的初始值为多少?</p>
+<p>(6)在第13个传输周期里，threshold的值为多少?</p>
+<p>(7)在第21个传输周期里，threshold 的值为多少?</p>
+<p>(8）第64、128个报文段分别在哪个传输周期内发送?</p>
+<p>·········································································································································································································</p>
+<p>编写维护不易，如果上述内容对你有帮助，并且希望能够获得复习803的全套资料，欢迎前往我的面包多商铺<a target="_blank" rel="noopener" href="https://mbd.pub/o/bread/mbd-ZJeckp5q"><strong>购买重邮803全套复习资料</strong></a>，也欢迎大家与我讨论803相关的内容。<br>  	<a target="_blank" rel="noopener" href="https://mbd.pub/o/bread/mbd-ZJeckp5q">重邮803全套复习资料链接</a></p>
+<p>​			<a target="_blank" rel="noopener" href="https://mbd.pub/o/bread/ZJyam5lv">重邮803-2023年答案解析</a></p>
+<p>​			<a target="_blank" rel="noopener" href="https://mbd.pub/o/bread/ZJ2blZxv">重邮模拟练习题答案解析</a></p>
+<p>习题以及答案解析样题：</p>
+<p><img src="/2023/09/04/%E9%87%8D%E9%82%AE803%E6%A8%A1%E6%8B%9F%E8%AE%AD%E7%BB%83%E9%A2%98/%E4%B9%A0%E9%A2%981.png"></p>
+<p><img src="/2023/09/04/%E9%87%8D%E9%82%AE803%E6%A8%A1%E6%8B%9F%E8%AE%AD%E7%BB%83%E9%A2%98/%E7%AD%94%E6%A1%881.png"></p>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>意中人
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://cquptky803.cn/2023/09/04/%E9%87%8D%E9%82%AE803%E6%A8%A1%E6%8B%9F%E8%AE%AD%E7%BB%83%E9%A2%98/" title="重邮803模拟训练题">https://cquptky803.cn/2023/09/04/重邮803模拟训练题/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/08/17/%E9%87%8D%E9%82%AE%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-803-2022%E5%B9%B4%E7%AD%94%E6%A1%88%E8%A7%A3%E6%9E%90/" rel="prev" title="重邮计算机网络(803)2022年答案解析">
+      <i class="fa fa-chevron-left"></i> 重邮计算机网络(803)2022年答案解析
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#2024%E5%B9%B4%E6%94%BB%E8%AF%BB%E7%A1%95%E5%A3%AB%E5%AD%A6%E4%BD%8D%E7%A0%94%E7%A9%B6%E7%94%9F%E6%A8%A1%E6%8B%9F%E7%BB%83%E4%B9%A0%E9%A2%981"><span class="nav-text">2024年攻读硕士学位研究生模拟练习题1</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A%E9%A2%98%EF%BC%88%E6%9C%AC%E5%A4%A7%E9%A2%98%E5%85%B14%E5%B0%8F%E9%A2%98%EF%BC%8C%E6%AF%8F%E5%B0%8F%E9%A2%983%E5%88%86%EF%BC%8C%E5%85%B112%E5%88%86%EF%BC%89"><span class="nav-text">一、名词解释题（本大题共4小题，每小题3分，共12分）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E7%AE%80%E7%AD%94%E9%A2%98%EF%BC%88%E6%9C%AC%E5%A4%A7%E9%A2%98%E5%85%B14%E5%B0%8F%E9%A2%98%EF%BC%8C%E6%AF%8F%E5%B0%8F%E9%A2%986%E5%88%86%EF%BC%8C%E5%85%B124%E5%88%86%EF%BC%89"><span class="nav-text">二、简答题（本大题共4小题，每小题6分，共24分）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%88%86%E6%9E%90%E9%A2%98%EF%BC%88%E6%9C%AC%E5%A4%A7%E9%A2%98%E5%85%B16%E5%B0%8F%E9%A2%98%EF%BC%8C%E6%AF%8F%E5%B0%8F%E9%A2%989%E5%88%86%EF%BC%8C%E5%85%B154%E5%88%86%EF%BC%89"><span class="nav-text">三、分析题（本大题共6小题，每小题9分，共54分）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E7%BB%BC%E5%90%88%E9%A2%98%EF%BC%88%E6%9C%AC%E5%A4%A7%E9%A2%98%E5%85%B1-5-%E5%B0%8F%E9%A2%98%EF%BC%8C%E6%AF%8F%E5%B0%8F%E9%A2%98-12-%E5%88%86%EF%BC%8C%E5%85%B1-60-%E5%88%86%EF%BC%89"><span class="nav-text">四、综合题（本大题共 5 小题，每小题 12 分，共 60 分）</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2024%E5%B9%B4%E6%94%BB%E8%AF%BB%E7%A1%95%E5%A3%AB%E5%AD%A6%E4%BD%8D%E7%A0%94%E7%A9%B6%E7%94%9F%E6%A8%A1%E6%8B%9F%E7%BB%83%E4%B9%A0%E9%A2%982"><span class="nav-text">2024年攻读硕士学位研究生模拟练习题2</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A%E9%A2%98%EF%BC%88%E6%9C%AC%E5%A4%A7%E9%A2%98%E5%85%B14%E5%B0%8F%E9%A2%98%EF%BC%8C%E6%AF%8F%E5%B0%8F%E9%A2%983%E5%88%86%EF%BC%8C%E5%85%B112%E5%88%86%EF%BC%89-1"><span class="nav-text">一、名词解释题（本大题共4小题，每小题3分，共12分）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E7%AE%80%E7%AD%94%E9%A2%98%EF%BC%88%E6%9C%AC%E5%A4%A7%E9%A2%98%E5%85%B14%E5%B0%8F%E9%A2%98%EF%BC%8C%E6%AF%8F%E5%B0%8F%E9%A2%986%E5%88%86%EF%BC%8C%E5%85%B124%E5%88%86%EF%BC%89-1"><span class="nav-text">二、简答题（本大题共4小题，每小题6分，共24分）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%88%86%E6%9E%90%E9%A2%98%EF%BC%88%E6%9C%AC%E5%A4%A7%E9%A2%98%E5%85%B16%E5%B0%8F%E9%A2%98%EF%BC%8C%E6%AF%8F%E5%B0%8F%E9%A2%989%E5%88%86%EF%BC%8C%E5%85%B154%E5%88%86%EF%BC%89-1"><span class="nav-text">三、分析题（本大题共6小题，每小题9分，共54分）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E7%BB%BC%E5%90%88%E9%A2%98%EF%BC%88%E6%9C%AC%E5%A4%A7%E9%A2%98%E5%85%B1-5-%E5%B0%8F%E9%A2%98%EF%BC%8C%E6%AF%8F%E5%B0%8F%E9%A2%98-12-%E5%88%86%EF%BC%8C%E5%85%B1-60-%E5%88%86%EF%BC%89-1"><span class="nav-text">四、综合题（本大题共 5 小题，每小题 12 分，共 60 分）</span></a></li></ol></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">意中人</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">意中人</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
